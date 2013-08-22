@@ -1,0 +1,23 @@
+<!--#if expr="$DOCUMENT_NAME = index.html" -->
+<!--#include virtual="../cgi/pages_in_category.cgi" -->
+<!--#include virtual="../cgi/similar_pages.cgi" -->
+<!--#elif expr="$DOCUMENT_NAME = archives.html" -->
+<!--#else -->
+<!--#include virtual="../cgi/similar_pages.cgi" -->
+<!--#include virtual="../cgi/comments.cgi" -->
+<!--#endif -->
+
+</article>
+</div> <!-- end container class from header -->
+<div id="push"></div>
+    </div><!-- end wrap -->
+
+<!-- <div class="footer"> -->
+<footer class="footer-yellow">
+This site created with the <a href="http://fletcherpenney.net/multimarkdown/cms/">MultiMarkdown-CMS</a>
+</footer>
+<!-- </div> end footer -->
+
+	<!-- call jQuery & jQuery UI if you want them -->
+	<script type="text/javascript" language="Javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script type="text/javascript" language="Javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
