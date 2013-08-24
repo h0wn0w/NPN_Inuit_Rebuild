@@ -1,16 +1,25 @@
-Title:				Neuropsych Now | A Neuropsychology Repository
-Date:				08/18/2013 
-Tags:				Neuropsychology
+Title:			Neuropsych Now
+Author: 		
+Date: 			
+Tags:
 
-NEUROPSYCH NOW
-knowledge and tools to keep you
-AHEAD OF THE CURVE
+# NEUROPSYCH NOW
+# knowledge and tools to keep you
+# AHEAD OF THE CURVE
 
-##What We Do
+# What We Do
 
-Neuropsych Now is a centralized source of information created for neuropsychology clinicians and students. We've compiled and created some of the best information available, and made it easy to access, wherever you are.
+## Neuropsych Now is a centralized source of information created for neuropsychology clinicians and students. We've compiled and created some of the best information available, and made it easy to access, wherever you are.
 
-Get Apps
-Browse Resources
-Read Articles
+### Get Apps
+### Browse Resources
+### Read Articles
+
+## Download Converters, Scoring Calculators, And More: Assessment Resources.
+
+## Find An iOS App To Enhance Your Clinical Skill Set. Like A Boss.
+
+## Do More Than Just Power Up Your Computer. Learn More With Neuropsych Now Articles.
+
+## Looking For More? Find it. Now. Freakishly Advanced Search.
 

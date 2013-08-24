@@ -30,9 +30,9 @@ $use-nav:           true;
 $use-options:       true;
 $use-pagination:    false;
 $use-breadcrumb:    false;
-$use-media:         false;
+$use-media:         true;
 $use-marginalia:    false;
-$use-island:        false;
+$use-island:        true;
 $use-block-list:    false;
 $use-matrix:        false;
 $use-split:         false;
@@ -71,3 +71,5 @@ $use-responsive:	true;
 /**
  * Place any of your own variables that sit on top of inuit.css here.
  */
+
+$use-colors:		true	 

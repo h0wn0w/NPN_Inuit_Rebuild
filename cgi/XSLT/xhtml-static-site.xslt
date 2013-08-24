@@ -81,7 +81,7 @@
 				<xsl:text disable-output-escaping="yes"><![CDATA[<!--#include virtual="${Base_URL}/cgi/tags.cgi" -->]]></xsl:text>
 			</xsl:if>
 			<xsl:apply-templates select="@*|node()"/>
-			<xsl:text disable-output-escaping="yes"><![CDATA[<!--#include virtual="${Base_URL}/templates/footer.html" -->]]></xsl:text>
+			<xsl:text disable-output-escaping="yes"><![CDATA[<!--#include virtual="${Base_URL}/templates/mainfoot.html" -->]]></xsl:text>
 		</xsl:copy>
 	</xsl:template>
 	

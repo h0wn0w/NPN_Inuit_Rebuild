@@ -1,0 +1,10 @@
+Title: 		Articles
+Author: 	W. Howard Buddin Jr., Ph.D. & S. Marc Testa, Ph.D.
+Date:
+Tags:		
+
+Neuropsych Now articles cover a variety of topics, from solid, clinical fundamentals to those you're unlikely to find in any other neuropsychology news source. No matter what, we're sure you'll find something you like. 
+
+If you would like to submit an article from your area of expertise, or on a topic that you think others will find interesting, plese contact [Dr. Testa](testa@neuropsychnow.com) or [Dr. Buddin](howardbuddin@neuropsychnow.com) with an idea or topic, and one of us will get back to you as soon as we're able.
+
+<!--#include virtual="cgi/latest_stories.cgi" -->

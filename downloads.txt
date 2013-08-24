@@ -1,0 +1,34 @@
+Title:		Assessment Resources
+Author:		
+Date: 		
+Tags:		Assessment, Evaluation, Testing, Tools
+
+This is a listing of Neuropsychology resources, many of which are *non-copyright protected* and are therefore free to distribute and use.
+
+The categories are collapsed in order to make navigating the list a little easier. Just click (or tap for mobile users) on a category name to expand or collapse its list.
+
+Please note that many of these links will redirect you to a downloads page. The downloads may be in a zipped archive (.zip) format. If they do not automatically open after downloading, just double-click the .zip file and your computer should "unpack" the contents of the file.
+
+### Testing & Protocols
+
+* [Aid to Capacity Evaluation (ACE)](http://d.pr/f/TXoj)
+* [Assessment Center](http://d.pr/ypr0) - provides online access to various other data collection instruments for research and clinical work
+* [Calibrated Neuropsychological Normative System (CNNS-SP)](http://d.pr/PSRf) - Links to other non-copyrighted test forms
+* [Montreal Cognitive Assessment (MoCA) : Versions 1, 2, 3, and for sight-impaired examinees](http://d.pr/4aUm)
+* [NIH Toolbox](http://d.pr/xgIA)
+* [Neuro QOL](http://d.pr/3JjT) is used to measure quality of life in children and adults with neurological disorders.
+* [St. Louis University Mental State Examination (SLUMS)](http://d.pr/f/g5VB)
+* [Trail Making Test (A & B)](http://d.pr/f/Fvwq)
+* [Kansas Sports Concussion Partnership Concussion Guides for Athletics Kansas Sports Concussion Partnership (KSCP) Concussion Guides](http://d.pr/f/V6g4) This package contains four PDFs designed to assist in the identification of concussion during athletic events. Three of these are made for professional use, with the fourth was made for distribution to athletes as an informative guide to concussion information. 
+* [National Institutes of Health Stroke Scale](http://d.pr/f/QQZJ)
+
+
+### Templates, Calculators, & Converters
+
+* [Excel Template for Patient Data](http://d.pr/f/B1QC)
+* [Peterson et al. Criteria For Mild Cognitive Impairment](http://d.pr/f/UYIR)
+* [Premorbid IQ Calculator](http://d.pr/f/fgIt)
+* [RBANS Scoring Assistant With OKLAHOMA Norms](http://d.pr/f/dyS0)
+* [Ruff RNBI Calculator](http://d.pr/f/Jefr)
+* [Standard Score Converter](http://d.pr/f/YuV7)
+* [Psychometrics Calculator](http://d.pr/4wN5) v 0.1 was sent to us, and written by, Brandon Gavett, Ph.D. Please see his site for complete information about this robust calculator
