@@ -11,15 +11,15 @@ Tags:
 
 ## Neuropsych Now is a centralized source of information created for neuropsychology clinicians and students. We've compiled and created some of the best information available, and made it easy to access, wherever you are.
 
-### Get Apps
-### Browse Resources
-### Read Articles
+### [Get Apps](neuroapps.html)
+### [Browse Resources](downloads.html)
+### [Read Articles](articles.html)
 
-## Download Converters, Scoring Calculators, And More: Assessment Resources.
+## Download Converters, Scoring Calculators, And More: [Assessment Resources](downloads.html).
 
-## Find An iOS App To Enhance Your Clinical Skill Set. Like A Boss.
+## Find An [iOS App](neuroapps.html) To Enhance Your Clinical Skill Set. Like A Boss.
 
-## Do More Than Just Power Up Your Computer. Learn More With Neuropsych Now Articles.
+## Do More Than Just Power Up Your Computer. Learn More With Neuropsych Now [Articles](articles.html).
 
 ## Looking For More? Find it. Now. Freakishly Advanced Search.
 
