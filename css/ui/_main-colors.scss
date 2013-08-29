@@ -1,0 +1,34 @@
+/*------------------------------------*\
+    $COLORS
+\*------------------------------------*/
+
+$blue: #3c4657;
+$cyan: #00E5FF;
+$gray: #999999;
+$orange: #FF7400;
+$red: #CC2D14;
+$white: #eee;
+
+body {
+	background-color: #eee
+}
+
+.blue {
+	background-color: $blue;
+}
+
+.cyan {
+	color: $cyan;
+}
+
+.gray {
+	color: $gray;
+}
+
+.orange {
+	color: $orange;
+}
+
+.red {
+	color: $red;
+}

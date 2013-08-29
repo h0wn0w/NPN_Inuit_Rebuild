@@ -2,15 +2,8 @@
 * Neuropsych Now CSS file
 */
 
-$blue: #3c4657;
-$margin: 16px;
-
-
-
-header {
-	background-color: $blue;
-}
-
-footer {
-	background-color: $blue;
-}
+@import "ui/_boxes.css";
+@import "ui/_main-colors.css";
+@import "ui/_navstyle.css";
+@import "ui/_spacing.css";
+@import "ui/_typography.css";

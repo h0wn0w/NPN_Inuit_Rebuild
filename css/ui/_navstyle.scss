@@ -1,0 +1,57 @@
+/*------------------------------------*\
+    $NAVBAR
+\*------------------------------------*/
+
+/**
+* This provides for tweaking aspects of .nav and <footer>
+*/
+
+$cream: rgb(238,232,213);
+$white: #eee;
+$gray: #999999;
+$blue: #3c4657; 
+
+header {
+	width: 90%;
+	margin: 0 auto;
+	padding: 0 10px 0 10px;
+	border-radius: 8px;
+}
+
+footer {
+	background-color: $blue;
+	h4, a {
+		color: $gray;
+	}
+	a {
+		padding: 1.168em 2.0em;
+		&:hover {
+			color: $cream;
+			background-color: transparent;
+		}
+		text: {
+	  		shadow: none;
+		  	decoration: none;
+		}
+	}
+}
+
+.nav {
+	margin: 10px 0px;
+	background-color: $blue;
+	li {
+		list-style: none;
+	a {
+	  color: #999999;
+	  padding: 0.5em;
+	  &:hover {
+	  color: rgb(238,232,213);
+	  background-color: transparent;
+	}
+		text: {
+	  		shadow: none;
+		  	decoration: none;
+		}
+	}
+	}
+} 

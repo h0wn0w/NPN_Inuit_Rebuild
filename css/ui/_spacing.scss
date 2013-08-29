@@ -1,0 +1,39 @@
+/*------------------------------------*\
+    $SPACING
+\*------------------------------------*/
+
+/**
+* This provides for tweaking spaces like padding and margins
+*/
+
+$tall-regular: 1.618em;
+$tall: 2em;
+$taller: $tall*1.5;
+$tallest: $tall*2;
+$width: 70em; 
+
+body {
+	margin: 0 auto;
+}
+
+footer {
+	margin-top: 25%
+}
+
+.tall {
+	padding: $tall 1.5em; 
+}
+
+.taller {
+	padding: $taller;
+}
+
+.tallest {
+	width: 80%;
+	padding: $tallest;
+}
+
+.article {
+	max-width: $width - 20em;
+	margin: 0 auto;
+}

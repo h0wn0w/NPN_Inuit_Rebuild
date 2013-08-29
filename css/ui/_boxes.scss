@@ -1,0 +1,20 @@
+/*------------------------------------*\
+    $CONTAINERS
+\*------------------------------------*/
+
+/**
+* This provides for creation of containers, wells, etc.
+*/
+
+$white: #eee;
+
+.contain-menu {
+	width: 300px;
+	height: auto; 
+	position: relative;
+	background-color: $white;
+	list-style: none;
+		li {
+			list-style: none;
+		}
+	}

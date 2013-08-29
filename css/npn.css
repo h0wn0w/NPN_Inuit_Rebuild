@@ -1,8 +1,5 @@
+@import url(inuit.css/base/_spacing.css);
+@import url(inuit.css/generic/_main-colors.css);
 /**
 * Neuropsych Now CSS file
 */
-header {
-  background-color: #3c4657; }
-
-footer {
-  background-color: #3c4657; }
