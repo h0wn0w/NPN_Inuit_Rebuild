@@ -5,6 +5,8 @@ Tags:                            Applications, Writing, Practice, Reports, Produ
 
 ![][dictamus]
 
+You So Crazy.
+
 Many psychologists use dictation software. Dragon NaturallySpeaking (on the PC) or Dragon Dictate (for Mac OS) are probably to most popular. These dictation software packages transform speech to text, in real time. That is, as you speak into a microphone, words appear on a screen. There is, however, a somewhat neglected feature that is built-in to these packages: **transcription**. Transcription allows you to record an audio file of your own speech that can be converted to text at a later point in time. Currently, the accuracy of Dragon's transcription feature is quite high and should, therefore, be considered something to add to your report writing workflow.
 
 "So do I need to buy an audio recorder?"

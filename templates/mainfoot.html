@@ -1,52 +1,44 @@
 
-<footer>
-  <div class="grid" >
-    <div class="grid__item one-fifth palm-one-whole">
+<footer class="blue tall">
+  <div class="grid grid--full grid--center" >
+    <div class="grid__item one-third palm-one-whole">
       <h4>Contact</h4>
-        <p><span><i class="icon-twitter"></i><a href="http://twitter.com/NeuropsychNow"> twitter</a></span>
-        <span><i class="icon-envelope-alt"></i> <script type="text/javascript">
-        //<![CDATA[
-        <!--
-        var x="function f(x){var i,o=\"\",ol=x.length,l=ol;while(x.charCodeAt(l/13)!" +
-        "=110){try{x+=x;l+=l;}catch(e){}}for(i=l-1;i>=0;i--){o+=x.charAt(i);}return " +
-        "o.substr(0,ol);}f(\")2,\\\"V\\\\\\\\PCKV600\\\\IY010\\\\n\\\\300\\\\410\\\\" +
-        "500\\\\a|100\\\\+4420\\\\y04/&$< $5100\\\\n!%*',j330\\\\{ (7+5`530\\\\bPSX4" +
-        "20\\\\NWY^VM@B^BZKClECDLF430\\\\JPOK@M=B z~hq8v*7<}~tdf|z\\\"\\\\771\\\\dle" +
-        "rejg\\\"(f};o nruter};))++y(^)i(tAedoCrahc.x(edoCrahCmorf.gnirtS=+o;721=%y;" +
-        "++y)2<i(fi{)++i;l<i;0=i(rof;htgnel.x=l,\\\"\\\"=o,i rav{)y,x(f noitcnuf\")"  ;
-        while(x=eval(x));
-        //-->
-        //]]>
-        </script>
-      </span>
-<span><i class="icon-facebook"></i><a href="http://www.facebook.com/pages/Neuropsych-Now/213658415438863"> facebook</a></span></p> 
-    </div>
-    <div class="grid__item one-fifth palm-one-whole">
+    </div><!-- 
+
+ --><div class="grid__item one-third palm-one-whole">
       <h4>Get</h4>
-        <p>
-          <span><i class="icon-lightbulb"></i><a href="/articles.html"> Articles</a></span>
-          <span><i class="icon-wrench"></i><a href="/tools.html"> Tools</a></span>
-        </p>
-      </div>
-    <div class="grid__item one-fifth palm-one-whole">
+      <ul id="menu-get">
+          <li><a href="#">Tools</a></li>
+            <ul class="contain-menu" style="display:none;">
+              <li><a href="/tools.html">Resources Guide</a></li>
+              <li><a href="/neuroapps.html">Neuro iOS Apps</a></li>
+            </ul>      
+        </ul>
+    </div><!-- 
+
+   --><div class="grid__item one-third palm-one-whole">
       <h4>About</h4>
-        <p>
-          <span><i class="icon-group"></i><a href="/aboutus.html"> Us</a></span>
-          <span><i class="icon-cloud"></i><a href="/aboutsite.html"> This Site</a></span>
-        </p>
     </div>
-  </div> <!-- end of footer top row -->
-  
-  <div class="grid__item one-half palm-one-whole" style="text-align: center; font-size: 14px;">
-    <div id="footlogo" class="">
-      <a href="http://neuropsychnow.com/">
-      <img src="/img/logo_inverse_mini.png" style="width: 50%;">
-      </a>
-    </div>
+
     <div class="grid__item one-half palm-one-whole">
+      <a href="http://neuropsychnow.com/"><img src="/img/logo_inverse_mini.png" style="width: 50%;">
+      </a>
+    </div><!-- 
+
+ --><div class="grid__item one-half palm-one-whole">
       <p>&copy; 2013 Neuropsych Now</p>
-      <p><a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.en_US">Licensed Under Creative Commons Attribution-NC-ND 3.0 UL</a></p>
-      <p><a href="/privacy.html">Privacy</a> &middot; <a href="/terms.html">Terms</a></p>
-    </div>
-  </div> <!-- end of footer bottom row -->
-</footer> <!-- end of footer container -->
+    </div> 
+  </div> 
+</footer> 
+
+<!-- JavaScript & JQuery -->
+
+  <script src="/js/jquery-1.9.0.js"></script>
+  <script src="/js/jquery-ui-1.10.0.custom.min.js"></script>
+
+<!-- toggle content sliding -->
+  <script>
+  $('#menu-tools', '#menu-get').click(function(){
+    $('.contain-menu').toggle('slide');
+  })(jQuery);
+  </script>
