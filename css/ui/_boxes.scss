@@ -3,18 +3,53 @@
 \*------------------------------------*/
 
 /**
-* This provides for creation of containers, wells, etc.
+* This provides for creation of containers, wells, borders, etc.
 */
 
 $white: #eee;
+$tp: top;
+$bm: bottom;
+$radius: 8px;
+
+@mixin boxx {
+	height: auto;
+}
+
+@mixin contain {
+	height: auto;
+	padding: 2em;
+	position: relative; 
+	list-style: none;
+}
+
+.contain {
+	@include contain;
+}
 
 .contain-menu {
+	@include contain;
+	@include arrow(top, left, red);
 	width: 300px;
-	height: auto; 
-	position: relative;
 	background-color: $white;
-	list-style: none;
 		li {
 			list-style: none;
 		}
 	}
+
+.contain-well {
+	@include contain;
+	width: auto;
+}
+
+.rounds {
+	radius: $radius;
+}
+
+.rounds-#{$tp} {
+	border-#{$tp}-radius: $radius;
+}
+
+.rounds-#{$bm} {
+	border-#{$bm}-radius: $radius;
+}
+

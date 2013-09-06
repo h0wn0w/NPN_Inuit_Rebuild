@@ -5,10 +5,16 @@
 * This provides for creation of containers, wells, etc.
 */
 .contain-menu {
-  width: 300px;
   height: auto;
   position: relative;
-  background-color: #eeeeee;
-  list-style: none; }
+  list-style: none;
+  width: 300px;
+  background-color: #eeeeee; }
   .contain-menu li {
     list-style: none; }
+
+.contain-well {
+  height: auto;
+  position: relative;
+  list-style: none;
+  width: auto; }

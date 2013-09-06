@@ -1,3 +1,10 @@
+<!--#if expr="$DOCUMENT_NAME = index.html" -->
+<!--#include virtual="../cgi/pages_in_category.cgi" -->
+<!--#include virtual="../cgi/similar_pages.cgi" -->
+<!--#elif expr="$DOCUMENT_NAME = archives.html" -->
+<!--#else -->
+<!--#include virtual="../cgi/similar_pages.cgi" -->
+<!--#endif -->
 
 <footer class="blue tall">
   <div class="grid grid--full grid--center" >
@@ -38,7 +45,16 @@
 
 <!-- toggle content sliding -->
   <script>
-  $('#menu-tools', '#menu-get').click(function(){
-    $('.contain-menu').toggle('slide');
+  $('#menu-tools').click(function(){
+    $('.contain-menu').slideToggle('slow');
   })(jQuery);
+
+  function slideMenu(){
+    if ($('li[id]').hasClass('className')){
+      $('.contain-menu').toggle('slide');
+    }
+  }
+
+  $('#menu-tools').click(slideMenu);
+  $('#menu-about').click(slideMenu);
   </script>

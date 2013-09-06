@@ -1,8 +1,8 @@
 Title: About This Site
+Author:
+Tags: About
 
-## About This Site ##
-
-### Legal ###
+## Legal 
 
 All content of [Neuropsych Now](http://neuropsychnow.com) is © 2012-2013 Neuropsych Now, and is licensed under a [Creative Commons Attribution-NC-ND 3.0 UL](http://creativecommons.org/licenses/by-nc-nd/3.0/deed.en_US)
 

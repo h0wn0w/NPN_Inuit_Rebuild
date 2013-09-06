@@ -1,9 +1,4 @@
 @charset "UTF-8";
-@import url(ui/_boxes.css);
-@import url(ui/_main-colors.css);
-@import url(ui/_navstyle.css);
-@import url(ui/_spacing.css);
-@import url(ui/_typography.css);
 /*------------------------------------*\
     STYLE.CSS
 \*------------------------------------*/
@@ -2868,6 +2863,163 @@ label,
 /**
  * She’s all yours, cap’n... Begin importing your stuff here.
  */
+/*------------------------------------*\
+    $CONTAINERS
+\*------------------------------------*/
 /**
-* Neuropsych Now CSS file
+* This provides for creation of containers, wells, borders, etc.
 */
+.contain {
+  height: auto;
+  padding: 2em;
+  position: relative;
+  list-style: none; }
+
+.contain-menu {
+  height: auto;
+  padding: 2em;
+  position: relative;
+  list-style: none;
+  width: 300px;
+  background-color: #eeeeee; }
+  .contain-menu:before {
+    border-bottom-color: red !important; }
+  .contain-menu:after {
+    border-bottom-color: red !important; }
+  .contain-menu li {
+    list-style: none; }
+
+.contain-well {
+  height: auto;
+  padding: 2em;
+  position: relative;
+  list-style: none;
+  width: auto; }
+
+.rounds {
+  radius: 8px; }
+
+.rounds-top {
+  border-top-radius: 8px; }
+
+.rounds-bottom {
+  border-bottom-radius: 8px; }
+
+/*------------------------------------*\
+    $COLORS
+\*------------------------------------*/
+body {
+  background-color: #eeeeee; }
+
+.blue {
+  background-color: #3c4657; }
+
+.blue-dark {
+  background-color: #272e39; }
+
+.bluegray {
+  background-color: #3d5f99; }
+
+.cyan {
+  color: #00e5ff; }
+
+.cyan-bg {
+  background-color: #00e5ff; }
+
+.gray {
+  color: #999999; }
+
+.gray-bg {
+  background-color: #999999; }
+
+.grayblue {
+  color: #586780; }
+
+.orange {
+  color: #ff7400; }
+
+.red {
+  color: #cc2d14; }
+
+/*------------------------------------*\
+    $NAVBAR
+\*------------------------------------*/
+/**
+* This provides for tweaking aspects of .nav <header> and <footer>
+*/
+header {
+  margin: 0 auto;
+  padding: 0 10px 0 10px; }
+
+.nav {
+  background-color: #3c4657; }
+  .nav li {
+    list-style: none; }
+    .nav li a {
+      color: #999999;
+      padding: 0.5em;
+      text-shadow: none;
+      text-decoration: none; }
+      .nav li a:hover {
+        color: #eee8d5;
+        background-color: transparent; }
+
+footer {
+  background-color: #3c4657; }
+  footer h4, footer a {
+    color: #999999; }
+  footer a {
+    padding: 1.168em 2.0em;
+    text-shadow: none;
+    text-decoration: none; }
+    footer a:hover {
+      color: #eee8d5;
+      background-color: transparent; }
+
+/*------------------------------------*\
+    $SPACING
+\*------------------------------------*/
+/**
+* This provides for tweaking spaces like padding and margins
+*/
+body {
+  margin: 0 auto; }
+
+footer {
+  margin-top: 25%; }
+
+.tall {
+  padding: 2em 1.5em; }
+
+.taller {
+  padding: 3em; }
+
+.tallest {
+  width: 80%;
+  padding: 4em; }
+
+.tall-narrow {
+  padding: 2em 0em; }
+
+.article {
+  max-width: 50em;
+  margin: 0 auto; }
+
+.tags {
+  padding-bottom: 2em; }
+
+/*------------------------------------*\
+    $TYPOGRAPHY
+\*------------------------------------*/
+/**
+* This provides for m'typography
+*/
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto Condensed", sans-serif; }
+
+a, div, li, p, ul {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300; }
+
+.center {
+  text-align: center; }

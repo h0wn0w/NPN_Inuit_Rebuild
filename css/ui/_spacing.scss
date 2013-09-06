@@ -33,7 +33,15 @@ footer {
 	padding: $tallest;
 }
 
+.tall-narrow {
+	padding: $tall 0em;
+}
+
 .article {
 	max-width: $width - 20em;
 	margin: 0 auto;
+}
+
+.tags {
+	padding-bottom: $tall;
 }
