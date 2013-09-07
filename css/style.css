@@ -2871,38 +2871,55 @@ label,
 */
 .contain {
   height: auto;
+  width: auto;
+  margin: 1em;
   padding: 2em;
   position: relative;
   list-style: none; }
 
 .contain-menu {
   height: auto;
+  width: auto;
+  margin: 1em;
   padding: 2em;
   position: relative;
   list-style: none;
   width: 300px;
   background-color: #eeeeee; }
-  .contain-menu:before {
-    border-bottom-color: red !important; }
-  .contain-menu:after {
-    border-bottom-color: red !important; }
   .contain-menu li {
     list-style: none; }
 
 .contain-well {
   height: auto;
+  width: auto;
+  margin: 1em;
   padding: 2em;
   position: relative;
   list-style: none;
   width: auto; }
 
+.contain-hide {
+  height: auto;
+  width: auto;
+  margin: 1em;
+  padding: 2em;
+  position: relative;
+  list-style: none;
+  width: auto;
+  display: none; }
+
 .rounds {
-  radius: 8px; }
+  border-style: solid;
+  border-width: 3px;
+  border-color: #76ff72;
+  border-radius: 8px; }
 
 .rounds-top {
   border-top-radius: 8px; }
 
 .rounds-bottom {
+  border-style: solid;
+  border-width: 3px;
   border-bottom-radius: 8px; }
 
 /*------------------------------------*\
@@ -2934,6 +2951,18 @@ body {
 
 .grayblue {
   color: #586780; }
+
+.green-dark {
+  color: #1b7f18; }
+
+.green-dark-bg {
+  background-color: #1b7f18; }
+
+.green-bright {
+  color: #76ff72; }
+
+.green-bright-bg {
+  background-color: #76ff72; }
 
 .orange {
   color: #ff7400; }

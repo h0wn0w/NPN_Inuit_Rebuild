@@ -12,14 +12,15 @@ Tags:
 ## Neuropsych Now is a centralized source of information created for neuropsychology clinicians and students. We've compiled and created some of the best information available, and made it easy to access, wherever you are.
 
 ### [Get Apps](neuroapps.html)
-### [Browse Resources](downloads.html)
-### [Read Articles](articles.html)
+### [Browse Tests](downloads.html)
+### [Find Links](extlinks.html)
 
-## Download Converters, Scoring Calculators, And More: [Assessment Resources](downloads.html).
+## Do More Than Just Power Up Your Computer. Learn More With Neuropsych Now Articles.
 
-## Find An [iOS App](neuroapps.html) To Enhance Your Clinical Skill Set. Like A Boss.
+<!--#include virtual="cgi/latest_stories.cgi" -->
 
-## Do More Than Just Power Up Your Computer. Learn More With Neuropsych Now [Articles](articles.html).
+## Looking For More? Find it. Now. [Freakishly Advanced Search](nsearch.php).
+![][spyglass]
 
-## Looking For More? Find it. Now. Freakishly Advanced Search.
+[spyglass]: img/spiglass.png 
 

@@ -7,6 +7,10 @@
 */
 
 $white: #eee;
+$green-dark: #1B7F18;
+$green-bright: #76FF72;
+$style: solid;
+$width: 1px;
 $tp: top;
 $bm: bottom;
 $radius: 8px;
@@ -17,6 +21,8 @@ $radius: 8px;
 
 @mixin contain {
 	height: auto;
+	width: auto;
+	margin: 1em;
 	padding: 2em;
 	position: relative; 
 	list-style: none;
@@ -28,7 +34,6 @@ $radius: 8px;
 
 .contain-menu {
 	@include contain;
-	@include arrow(top, left, red);
 	width: 300px;
 	background-color: $white;
 		li {
@@ -41,8 +46,19 @@ $radius: 8px;
 	width: auto;
 }
 
+.contain-hide {
+	@include contain;
+	width: auto;
+	display: none;
+}
+
 .rounds {
-	radius: $radius;
+	border: {
+		style: $style;
+		width: $width * 3;
+		color: $green-bright;
+		radius: $radius;
+	}
 }
 
 .rounds-#{$tp} {
@@ -50,6 +66,10 @@ $radius: 8px;
 }
 
 .rounds-#{$bm} {
-	border-#{$bm}-radius: $radius;
+	border: {
+		style: $style;
+		width: $width *3;
+		#{$bm}-radius: $radius;
+	}
 }
 

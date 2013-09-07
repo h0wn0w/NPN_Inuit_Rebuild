@@ -8,6 +8,8 @@ $bluelight: #B0CDFF;
 $cyan: #00E5FF;
 $gray: #999999;
 $grayblue: #586780;
+$green-dark: #1B7F18;
+$green-bright: #76FF72;
 $orange: #FF7400;
 $red: #CC2D14;
 $white: #eee;
@@ -48,6 +50,22 @@ body {
 
 .grayblue {
 	color: $grayblue;
+}
+
+.green-dark {
+	color: $green-dark;
+}
+
+.green-dark-bg {
+	background-color: $green-dark;
+}
+
+.green-bright {
+	color: $green-bright;
+}
+
+.green-bright-bg {
+	background-color: $green-bright;
 }
 
 .orange {
