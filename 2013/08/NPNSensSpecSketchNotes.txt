@@ -7,7 +7,7 @@ Here at NeuropsychNow, one of our goals is to provide our readers with a way to 
 
 ![Sketchnote: Sensitivity, specificity, and misclassification terms][fig_id]
 
-The figure (above) speaks for itself. However, suppose you developed a test to detect the presence of some condition (e.g., malingering, dementia, PTSD, etc.). Of course, you would want to know how well the test can discriminate between those with and without the condition of interest (COI). You would also want to know the rate of false or incorrect classification. The statistical terms used for this type of information include the following:
+The figure (above) speaks for itself. However, suppose you developed a test to detect the presence of some condition (e.g., malingering, dementia, PTSD, etc.). That would be great! Of course, you would want to know how well the test can discriminate between those with and without the condition of interest (COI). You would also want to know the rate of false or incorrect classification. The statistical terms used for this type of information include the following:
 
 ##Accuracy
 - **Sensitivity** - the proportion of individuals with the COI who are correctly detected by the test.

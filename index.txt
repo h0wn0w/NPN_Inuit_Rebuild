@@ -1,9 +1,9 @@
-Title:			Neuropsych Now
+Title:		Neuropsych Now
 Author: 		
 Date: 			
-Tags:
+Tags:		Main, Neuropsychology
 
-# NEUROPSYCH NOW
+
 # knowledge and tools to keep you
 # AHEAD OF THE CURVE
 
@@ -11,13 +11,9 @@ Tags:
 
 ## Neuropsych Now is a centralized source of information created for neuropsychology clinicians and students. We've compiled and created some of the best information available, and made it easy to access, wherever you are.
 
-### [Get Apps](neuroapps.html)
-### [Browse Tests](downloads.html)
-### [Find Links](extlinks.html)
-
-## Do More Than Just Power Up Your Computer. Learn More With Neuropsych Now Articles.
-
-<!--#include virtual="cgi/latest_stories.cgi" -->
+### [Get Apps](neuroapps.html)  
+### [Browse Tests](downloads.html)  
+### [Find Links](extlinks.html)  
 
 ## Looking For More? Find it. Now. [Freakishly Advanced Search](nsearch.php).
 ![][spyglass]

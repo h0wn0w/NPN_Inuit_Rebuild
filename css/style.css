@@ -3052,3 +3052,6 @@ a, div, li, p, ul {
 
 .center {
   text-align: center; }
+
+a:visited {
+  color: #586780; }

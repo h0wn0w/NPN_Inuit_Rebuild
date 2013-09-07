@@ -8,6 +8,7 @@
 
 $font-body: 'Roboto', sans-serif;
 $font-heading: 'Roboto Condensed', sans-serif;
+$grayblue: #586780;
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: $font-heading;
@@ -20,4 +21,8 @@ a, div, li, p, ul {
 
 .center {
 	text-align: center;
+}
+
+a:visited {
+	color: $grayblue;
 }
