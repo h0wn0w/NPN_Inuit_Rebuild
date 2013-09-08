@@ -69,9 +69,9 @@
 
 	<xsl:template match="body">
 		<xsl:copy>
-			<xsl:text disable-output-escaping="yes"><![CDATA[<!--#include virtual="${Base_URL}/templates/header.html" --><div class="article">]]></xsl:text>
+			<xsl:text disable-output-escaping="yes"><![CDATA[<!--#include virtual="${Base_URL}/templates/header.html" -->]]></xsl:text>
 			<xsl:if test="/html/head/title != ''">
-				<h1 class="page-title red"><xsl:value-of select="/html/head/title"/></h1>
+				<h1 class="page-title"><xsl:value-of select="/html/head/title"/></h1>
 			</xsl:if>
 			<xsl:if test="/html/head/meta[translate(@name,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz') = 'date']/@content != ''">
 				<div class="author">Written By: <xsl:value-of select="/html/head/meta[translate(@name,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz') = 'author']/@content"/>
@@ -82,8 +82,7 @@
 				</div>
 			</xsl:if>
 			<xsl:if test="/html/head/meta[translate(@name,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz') = 'tags']/@content != ''">
-				<div class="tags"><xsl:text disable-output-escaping="yes"><![CDATA[<!--#include virtual="${Base_URL}/cgi/tags.cgi" -->]]></xsl:text>
-			</div>
+				<xsl:text disable-output-escaping="yes"><![CDATA[<!--#include virtual="${Base_URL}/cgi/tags.cgi" -->]]></xsl:text>
 			</xsl:if>
 			<xsl:apply-templates select="@*|node()"/>
 			<xsl:text disable-output-escaping="yes"><![CDATA[<!--#include virtual="${Base_URL}/templates/footer.html" -->]]></xsl:text>
