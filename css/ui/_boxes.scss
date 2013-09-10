@@ -10,10 +10,11 @@ $white: #eee;
 $green-dark: #1B7F18;
 $green-bright: #76FF72;
 $style: solid;
-$width: 1px;
+$size: 1px;
 $tp: top;
 $bm: bottom;
 $radius: 8px;
+$width: 70em;
 
 @mixin boxx {
 	height: auto;
@@ -26,6 +27,11 @@ $radius: 8px;
 	padding: 2em;
 	position: relative; 
 	list-style: none;
+}
+
+.article {
+	max-width: $width - 20em;
+	margin: 0 auto;
 }
 
 .contain {
@@ -55,7 +61,7 @@ $radius: 8px;
 .rounds {
 	border: {
 		style: $style;
-		width: $width * 3;
+		width: $size * 3;
 		color: $green-bright;
 		radius: $radius;
 	}
@@ -68,7 +74,7 @@ $radius: 8px;
 .rounds-#{$bm} {
 	border: {
 		style: $style;
-		width: $width *3;
+		width: $size *3;
 		#{$bm}-radius: $radius;
 	}
 }

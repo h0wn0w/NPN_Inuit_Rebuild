@@ -9,8 +9,7 @@
 $tall-regular: 1.618em;
 $tall: 2em;
 $taller: $tall*1.5;
-$tallest: $tall*2;
-$width: 70em; 
+$tallest: $tall*2; 
 
 body {
 	margin: 0 auto;
@@ -35,11 +34,6 @@ footer {
 
 .tall-narrow {
 	padding: $tall 0em;
-}
-
-.article {
-	max-width: $width - 20em;
-	margin: 0 auto;
 }
 
 .tags {

@@ -2869,6 +2869,10 @@ label,
 /**
 * This provides for creation of containers, wells, borders, etc.
 */
+.article {
+  max-width: 50em;
+  margin: 0 auto; }
+
 .contain {
   height: auto;
   width: auto;
@@ -3030,10 +3034,6 @@ footer {
 .tall-narrow {
   padding: 2em 0em; }
 
-.article {
-  max-width: 50em;
-  margin: 0 auto; }
-
 .tags {
   padding-bottom: 2em; }
 
@@ -3055,3 +3055,6 @@ a, div, li, p, ul {
 
 a:visited {
   color: #586780; }
+
+div a {
+  word-wrap: break-word; }

@@ -26,3 +26,9 @@ a, div, li, p, ul {
 a:visited {
 	color: $grayblue;
 }
+
+div {
+	a {
+		word-wrap: break-word;
+	}
+}
