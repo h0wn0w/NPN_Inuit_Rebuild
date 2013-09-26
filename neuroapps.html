@@ -7,21 +7,21 @@
     <meta name="description" content="">
     <meta name="author" content="W. Howard Buddin Jr., Ph.D. & S. Marc Testa, Ph.D.">
 <!--#include virtual="${Base_URL}/templates/head.html" -->
-	<script type="text/javascript" charset="utf-8" src="/DataTables/media/js/jquery.dataTables.min.js"></script>
+	<script src="/js/jquery-1.9.1.js"></script>
+	<script type="text/javascript" charset="utf-8" src="/DataTables/media/js/jquery.dataTables.js"></script>
 	<style type="text/css" title="currentStyle">
-	    @import "/DataTables/media/css/demo_table.css";
+		/*@import "/DataTables/media/css/demo_table.css";*/
 	</style>
 <!-- Call Neuropsych Now Navbar -->
 <!--#include virtual="${Base_URL}/templates/header.html" -->
 
-    <div class="container-fluid">
-    	<!-- <div class="dataTables_length"> -->
-    	<div id="pageheader" class="page-header">
-    		<div class="row-fluid">
-    			<div class="span4">
-    				<h1>Mobile Apps</h1>
-    			</div>
-    			<div class="span8">
+    <div class="grid">
+    	<div id="pageheader" class="contain">
+    		<div class="grid__item one-half palm-one-whole">
+    			<h1>Mobile Apps</h1>
+    		</div>
+    			
+    			<div class="grid__item palm-one-whole">
     				<h3 style="text-align:center">Please Note:</h3>
         	<p class="lead">We have not tried all of these applications, nor do we intend to. Any particular app's inclusion does not equate to an endorsement by Neuropsych Now. This table is what it is: a quick reference list with links to each application's App Store page.</p>
         	<p class="lead">Reviews often have poor <b>sensitivity</b> as they're sometimes "reviewed" by the app's own developers using bogus accounts. <b>Specificity</b> can be reduced when people leave negative reviews that do not necessarily reflect an app's functionality (e.g., <em>"this app sux because it does not have a purple icon and purple iz the best colur"</em>). Occasionally, though, an app will have a clear trail of valid, negative reviews. Any such app was excluded.</p>
@@ -31,23 +31,23 @@
         
 	<!-- Begin the table -->
 
-<table id="neuro" border="0" cellpadding="0" cellspacing="0" class="display">
+<table id="neuro" border="0" cellpadding="0" cellspacing="0" class="grid table--bordered table--data">
     <!-- <table> -->
 <colgroup>
-<col style="text-align:left;">
-<col style="text-align:center;">
-<col style="text-align:center;">
-<col style="text-align:center;">
-<col style="text-align:center;">
+<col class="t12"style="text-align:left;">
+<col class="t12"style="text-align:center;">
+<col class="t12"style="text-align:center;">
+<col class="t12"style="text-align:center;">
+<col class="t12"style="text-align:center;">
 </colgroup>
 
-<thead>
+<thead class="" >
 <tr>
-	<th class="sorting" role="columnheader" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Name: activate to sort column ascending">Name</th>
-	<th class="sorting" role="columnheader" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Keywords: activate to sort column ascending">Keywords</th>
-	<th class="sorting" role="columnheader" tabindex="0" aria-controls="example" rowspan="1" colspan="1" style="width: 60px;" aria-label="iOS: activate to sort column ascending">iOS</th>
-	<th class="sorting" role="columnheader" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Android: activate to sort column ascending">Android</th>
-	<th class="sorting" role="columnheader" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Price: activate to sort column ascending">Price</th>
+	<th class="sorting" role="columnheader" tabindex="0" aria-controls="Name" rowspan="1" colspan="1" aria-label="Name: activate to sort column ascending">Name</th>
+	<th class="sorting" role="columnheader" tabindex="0" aria-controls="Keywords" rowspan="1" colspan="1" aria-label="Keywords: activate to sort column ascending">Keywords</th>
+	<th class="sorting" role="columnheader" tabindex="0" aria-controls="iOS" rowspan="1" colspan="1" style="width: 60px;" aria-label="iOS: activate to sort column ascending">iOS</th>
+	<th class="sorting" role="columnheader" tabindex="0" aria-controls="Android" rowspan="1" colspan="1" aria-label="Android: activate to sort column ascending">Android</th>
+	<th class="sorting" role="columnheader" tabindex="0" aria-controls="Price" rowspan="1" colspan="1" aria-label="Price: activate to sort column ascending">Price</th>
 </tr>
 </thead>
 
@@ -379,25 +379,18 @@
 	<td style="text-align:center;">research, terms</td>
 	<td style="text-align:center;"><a href="https://itunes.apple.com/us/app/ucentral-medical-references/id301867156?mt=8" target="_blank"><i class="icon-apple icon-large"> link</i></a></td>
 	<td style="text-align:center;"></td>
-	<td style="text-align:center;" colspan="2">$0.00<a href="#fn:5" id="fnref:5" title="see footnote" class="footnote">[5]</a>
-</td>
+	<td style="text-align:center;" colspan="2">$0.00<a href="#fn:5" id="fnref:5" title="see footnote" class="footnote">[5]</a></td>
 </tr>
 		</tbody>
 		</table>
-	</div> <!-- neuroapps id -->
-<!-- </div> 
-
-	</div> 
-</div> 
-</div>  -->
+	</div> <!-- table container -->
 
 <div class="container">
 <div class="footnotes">
 <hr>
 <ol>
-
 <li id="fn:1">
-	<p>$1.99 upgrade</p> <a href="#fnref:1" title="return to item" class="reversefootnote">&#160;&#8617;</a></p>
+<p>$1.99 upgrade</p> <a href="#fnref:1" title="return to item" class="reversefootnote">&#160;&#8617;</a></p>
 </li>
 
 <li id="fn:2">
@@ -430,21 +423,17 @@
 </div>
 </div>
 
-
-</div> <!-- End jumbotron class -->
-
- <div id="push"></div>
-    </div> <!-- end wrap -->     
 <!--#include virtual="${Base_URL}/templates/footer.html" -->
 
-    <!-- Les javascripts 
-========================================================== -->
+    <!-- JavaScript & JQuery -->
+    
+    <script src="/js/jquery-ui-1.10.3.custom.min.js"></script>
+
     <script type="text/javascript" charset="utf-8">
     $(document).ready(function(){
     	$('#neuro').dataTable();
-    })(jQuery);
-		
-
-	</script>
+    });
+    </script>
+ 
   </body>
 </html>

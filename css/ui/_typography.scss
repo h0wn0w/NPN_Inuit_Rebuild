@@ -6,12 +6,13 @@
 * This provides for m'typography
 */
 
-$font-body: 'Roboto', sans-serif;
-$font-heading: 'Roboto Condensed', sans-serif;
+$font-body: "proxima-nova",sans-serif;
+$font-heading: "proxima-nova",sans-serif;
 $grayblue: #586780;
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: $font-heading;
+	font-weight: 600;
 }
 
 a, div, li, p, ul {

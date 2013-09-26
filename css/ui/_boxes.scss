@@ -55,7 +55,7 @@ $width: 70em;
 .contain-hide {
 	@include contain;
 	width: auto;
-	display: none;
+	display: hidden;
 }
 
 .rounds {

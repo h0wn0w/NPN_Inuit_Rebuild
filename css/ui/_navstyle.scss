@@ -18,6 +18,7 @@ header {
 
 .nav {
 	background-color: $blue;
+	display: inline;
 	li {
 		list-style: none;
 	a {
@@ -52,3 +53,24 @@ footer {
 		}
 	}
 } 
+
+// co-opted from responsive nav
+
+.nav-collapse {
+	text: {
+		shadow: none;
+		decoration: none;
+	}
+	ul, li {
+		width: 100%;
+		display: inline;
+		padding: 0;
+	}
+	ul {
+		margin: 0;
+		list-style: none;
+	}
+	// li, a {
+	// 	padding: 0 1em;
+	// }
+}
