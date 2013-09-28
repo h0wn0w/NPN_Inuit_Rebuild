@@ -6,9 +6,8 @@
 * This provides for creation of containers, wells, borders, etc.
 */
 
-$white: #eee;
-$green-dark: #1B7F18;
-$green-bright: #76FF72;
+@import "_main-colors";
+
 $style: solid;
 $size: 1px;
 $tp: top;
@@ -27,6 +26,18 @@ $width: 70em;
 	padding: 2em;
 	position: relative; 
 	list-style: none;
+}
+
+@mixin rounded($vert, $horz, $radius) {
+	border: {
+		style: $style none none inset;
+		width: $size *8;
+		color: $grayblue;
+		radius: $radius;
+		#{$vert}#{$horz}: $radius;
+	}
+  -moz-border-radius-#{$vert}#{$horz}: $radius;
+  -webkit-border-#{$vert}-#{$horz}-#{$bm}-radius: $radius;
 }
 
 .article {
@@ -49,12 +60,12 @@ $width: 70em;
 
 .contain-well {
 	@include contain;
-	width: auto;
+	@include rounded(top, left, $radius);
+	background-color: $white-bright;
 }
 
 .contain-hide {
 	@include contain;
-	width: auto;
 	display: hidden;
 }
 

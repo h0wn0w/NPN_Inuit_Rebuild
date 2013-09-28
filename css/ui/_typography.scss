@@ -13,6 +13,10 @@ $grayblue: #586780;
 h1, h2, h3, h4, h5, h6 {
 	font-family: $font-heading;
 	font-weight: 600;
+	text: {
+		shadow: none;
+		decoration: none;
+	}
 }
 
 a, div, li, p, ul {

@@ -11,9 +11,19 @@ $white: #eee;
 $gray: #999999;
 $blue: #3c4657; 
 
+@mixin rounded($vert, $horz, $radius) {
+  border-#{$vert}-#{$horz}-radius: $radius;
+  -moz-border-radius-#{$vert}#{$horz}: $radius;
+  -webkit-border-#{$vert}-#{$horz}-radius: $radius;
+}
+
 header {
 	margin: 0 auto;
 	padding: 0 10px 0 10px;
+	text: {
+  		shadow: none;
+	  	decoration: none;
+	}
 }
 
 .nav {
@@ -21,6 +31,12 @@ header {
 	display: inline;
 	li {
 		list-style: none;
+		&:first-child {
+			@include rounded(top, left, 8px);
+		}
+		&:last-child {
+			@include rounded(top, left, 5px);
+		}
 	a {
 	  color: #999999;
 	  padding: 0.5em;
@@ -57,12 +73,14 @@ footer {
 // co-opted from responsive nav
 
 .nav-collapse {
-	text: {
-		shadow: none;
-		decoration: none;
+	a {
+		text: {
+			shadow: none;
+			decoration: none;
+		}
 	}
 	ul, li {
-		width: 100%;
+		width: auto;
 		display: inline;
 		padding: 0;
 	}
@@ -70,7 +88,4 @@ footer {
 		margin: 0;
 		list-style: none;
 	}
-	// li, a {
-	// 	padding: 0 1em;
-	// }
 }

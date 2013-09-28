@@ -3062,6 +3062,54 @@ label,
 /**
 * This provides for creation of containers, wells, borders, etc.
 */
+/*------------------------------------*\
+    $COLORS
+\*------------------------------------*/
+body {
+  background-color: #eeeeee; }
+
+.blue {
+  background-color: #3c4657; }
+
+.blue-dark {
+  background-color: #272e39; }
+
+.bluegray {
+  background-color: #3d5f99; }
+
+.cyan {
+  color: #00e5ff; }
+
+.cyan-bg {
+  background-color: #00e5ff; }
+
+.gray {
+  color: #999999; }
+
+.gray-bg {
+  background-color: #999999; }
+
+.grayblue {
+  color: #586780; }
+
+.green-dark {
+  color: #1b7f18; }
+
+.green-dark-bg {
+  background-color: #1b7f18; }
+
+.green-bright {
+  color: #76ff72; }
+
+.green-bright-bg {
+  background-color: #76ff72; }
+
+.orange {
+  color: #ff7400; }
+
+.red {
+  color: #cc2d14; }
+
 .article {
   max-width: 50em;
   margin: 0 auto; }
@@ -3093,7 +3141,14 @@ label,
   padding: 2em;
   position: relative;
   list-style: none;
-  width: auto; }
+  border-style: solid none none inset;
+  border-width: 8px;
+  border-color: #586780;
+  border-radius: 8px;
+  border-topleft: 8px;
+  -moz-border-radius-topleft: 8px;
+  -webkit-border-top-left-bottom-radius: 8px;
+  background-color: white; }
 
 .contain-hide {
   height: auto;
@@ -3102,7 +3157,6 @@ label,
   padding: 2em;
   position: relative;
   list-style: none;
-  width: auto;
   display: hidden; }
 
 .rounds {
@@ -3175,13 +3229,23 @@ body {
 */
 header {
   margin: 0 auto;
-  padding: 0 10px 0 10px; }
+  padding: 0 10px 0 10px;
+  text-shadow: none;
+  text-decoration: none; }
 
 .nav {
   background-color: #3c4657;
   display: inline; }
   .nav li {
     list-style: none; }
+    .nav li:first-child {
+      border-top-left-radius: 8px;
+      -moz-border-radius-topleft: 8px;
+      -webkit-border-top-left-radius: 8px; }
+    .nav li:last-child {
+      border-top-left-radius: 5px;
+      -moz-border-radius-topleft: 5px;
+      -webkit-border-top-left-radius: 5px; }
     .nav li a {
       color: #999999;
       padding: 0.5em;
@@ -3203,16 +3267,16 @@ footer {
       color: #eee8d5;
       background-color: transparent; }
 
-.nav-collapse {
+.nav-collapse a {
   text-shadow: none;
   text-decoration: none; }
-  .nav-collapse ul, .nav-collapse li {
-    width: 100%;
-    display: inline;
-    padding: 0; }
-  .nav-collapse ul {
-    margin: 0;
-    list-style: none; }
+.nav-collapse ul, .nav-collapse li {
+  width: auto;
+  display: inline;
+  padding: 0; }
+.nav-collapse ul {
+  margin: 0;
+  list-style: none; }
 
 /*------------------------------------*\
     $SPACING
@@ -3250,7 +3314,9 @@ footer {
 */
 h1, h2, h3, h4, h5, h6 {
   font-family: "proxima-nova", sans-serif;
-  font-weight: 600; }
+  font-weight: 600;
+  text-shadow: none;
+  text-decoration: none; }
 
 a, div, li, p, ul {
   font-family: "proxima-nova", sans-serif;
