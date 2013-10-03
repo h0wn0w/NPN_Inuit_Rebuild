@@ -1,6 +1,6 @@
-<!-- this first div closes the opening div from header -->
-<!-- </div> --><!-- 
---><div class="grid__item lap-and-up-one-third palm-one-whole contain-well-orange">
+<!-- this first div closes the opening div from header. breaking tag after the /div -->
+<!-- </div> -->
+<div class="grid__item lap-and-up-one-third palm-one-whole contain-well-orange">
 <h3 class="orange">Articles Directory</h3>
 	<ul>
 		<li><a href="/articles.html" title="Articles">Most Recent Articles</a></li>
@@ -8,15 +8,14 @@
 		<li><a href="/tags/" title="Tag Map">Tag Map</a></li>
 		<!-- <li><a href="/colophon/" title="Colophon">Colophon</a></li> -->
 	</ul>
-</div>
 
-<!-- <h3>Search</h3>
-<div>
-	<form action="/search/">
-	  <div>
-	    <input type="text" name="query" size="25" />
-	    <input type="submit" value="Search" />
-	  </div>
-	</form>
-</div> -->
+<!--#if expr="$DOCUMENT_NAME = index.html" -->
+<!--#include virtual="../cgi/pages_in_category.cgi" -->
+<!--#include virtual="../cgi/similar_pages.cgi" -->
+<!--#elif expr="$DOCUMENT_NAME = archives.html" -->
+<!--#else -->
+<!--#include virtual="../cgi/similar_pages.cgi" -->
+<!--#endif -->
+</div><!--
+--><div class="grid__item lap-and-up-two-thirds palm-one-whole">
 

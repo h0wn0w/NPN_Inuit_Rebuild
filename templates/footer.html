@@ -1,23 +1,10 @@
-<!--#if expr="$DOCUMENT_NAME = index.html" -->
-<div class="grid__item lap-and-up-one-third palm-one-whole contain-well-orange">
-<!--#include virtual="../cgi/pages_in_category.cgi" -->
-<!--#include virtual="../cgi/similar_pages.cgi" -->
-</div>
-<!--#elif expr="$DOCUMENT_NAME = archives.html" -->
-<!--#else -->
-<div class="grid__item lap-and-up-one-third palm-one-whole contain-well-orange">
-<!--#include virtual="../cgi/similar_pages.cgi" -->
-</div>
-<!--#endif -->
 
 <!-- optionally include sidebar here -->
-
+</div> <!-- closing div from bottom of sidebar -->
 <footer class="blue tall">
-  <div class="grid grid--full grid--center" >
     <div class="grid__item one-third palm-one-whole">
       <h4 class="center">Contact</h4>
     </div><!-- 
-
  --><div class="grid__item one-third palm-one-whole">
       <h4>Get</h4>
       <ul id="menu-get">
@@ -28,20 +15,16 @@
             </ul>      
         </ul>
     </div><!-- 
-
-   --><div class="grid__item one-third palm-one-whole">
+   --><div class="grid__item one-third palm-one-whole"> <!-- bottom row -->
       <h4>About</h4>
     </div>
-
     <div class="grid__item one-half palm-one-whole">
       <a href="/"><img src="/img/logo_inverse_mini.png" style="width: 50%;">
       </a>
     </div><!-- 
-
  --><div class="grid__item one-half palm-one-whole">
       <p>&copy; 2013 Neuropsych Now</p>
     </div> 
-  </div> 
 </footer>
 
 <!-- Some JavaScript, jQuery --> 
