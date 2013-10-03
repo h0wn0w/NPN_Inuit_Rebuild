@@ -1,13 +1,16 @@
 <!--#if expr="$DOCUMENT_NAME = index.html" -->
+<div class="grid__item lap-and-up-one-third palm-one-whole contain-well-orange">
 <!--#include virtual="../cgi/pages_in_category.cgi" -->
 <!--#include virtual="../cgi/similar_pages.cgi" -->
+</div>
 <!--#elif expr="$DOCUMENT_NAME = archives.html" -->
 <!--#else -->
+<div class="grid__item lap-and-up-one-third palm-one-whole contain-well-orange">
 <!--#include virtual="../cgi/similar_pages.cgi" -->
+</div>
 <!--#endif -->
 
-</div><!-- 
---><!--#include file="sidebar.html" -->
+<!-- optionally include sidebar here -->
 
 <footer class="blue tall">
   <div class="grid grid--full grid--center" >
@@ -44,12 +47,3 @@
 <!-- Some JavaScript, jQuery --> 
   <script src="/js/jquery-1.9.1.js"></script>
   <script src="/js/jquery-ui-1.10.3.custom.min.js"></script>
-
-  <script>
-  $(function() {
-    $( "#menu" ).menu(
-      );
-  });
-  </script>
-
-

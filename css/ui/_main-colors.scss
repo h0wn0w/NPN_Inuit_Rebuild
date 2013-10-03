@@ -2,6 +2,8 @@
     $COLORS
 \*------------------------------------*/
 
+$black: #000000;
+$black-translucent: rgba(0,0,0,0.8);
 $blue: #3c4657;
 $bluegray: #3D5F99;
 $bluelight: #B0CDFF;
@@ -19,6 +21,18 @@ body {
 	background-color: #eee
 }
 
+.black {
+	color: $black;
+}
+
+.black-bg {
+	background-color: $black;
+}
+
+.black-translucent {
+	background-color: $black-translucent;
+}
+
 .blue {
 	background-color: $blue;
 }
@@ -28,10 +42,12 @@ body {
 }
 
 .bluegray {
-	background-color: $bluegray;
+	color: $bluegray;
 }
 
-.bluegray-bg {}
+.bluegray-bg {
+	background-color: $bluegray;
+}
 
 .cyan {
 	color: $cyan;
@@ -73,6 +89,31 @@ body {
 	color: $orange;
 }
 
+.orange-bg {
+	background-color: $orange;
+}
+
 .red {
 	color: $red;
+}
+
+.red-bg {
+	background-color: $red;
+}
+
+.white-bright {
+	color: $white-bright;
+}
+
+.white-bright-bg {
+	background-color: $white-bright;
+}
+
+.mainpage {
+	background-image: url('http://nnimages.s3.amazonaws.com/bookshelf.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	-webkit-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	background-size: 100% 100%;
 }

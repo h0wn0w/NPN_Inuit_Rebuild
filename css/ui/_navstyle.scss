@@ -72,20 +72,102 @@ footer {
 
 // co-opted from responsive nav
 
-.nav-collapse {
-	a {
-		text: {
-			shadow: none;
-			decoration: none;
-		}
-	}
-	ul, li {
-		width: auto;
-		display: inline;
-		padding: 0;
-	}
-	ul {
-		margin: 0;
-		list-style: none;
-	}
-}
+// .nav-collapse {
+// 	a {
+// 		text: {
+// 			shadow: none;
+// 			decoration: none;
+// 		}
+// 	}
+// 	ul, li {
+// 		width: auto;
+// 		display: inline;
+// 		padding: 0;
+// 	}
+// 	ul {
+// 		margin: 0;
+// 		list-style: none;
+// 	}
+// }
+
+/* CSS For Dropdown Menu Start */
+// ul {
+// 	list-style:none;
+// 	padding:0px;
+// 	margin:0px;
+// 	li {
+// 		display:inline;
+// 		float:left;
+// 	}
+// 	a {
+// 		color:#ffffff;
+// 		background:#990E00;
+// 		margin-right:5px;
+// 		font-weight:bold;
+// 		font-size:12px;
+// 		// font-family:verdana;
+// 		text-decoration:none;
+// 		display:block;
+// 		width:100px;
+// 		height:25px;
+// 		line-height:25px;
+// 		text-align:center;
+// 		-webkit-border-radius:5px;
+// 		-moz-border-radius:5px;
+// 		border: 1px solid #560E00;
+// 		&:hover {
+// 			color:#cccccc;
+// 			background:#560E00;
+// 			font-weight:bold;
+// 			text-decoration:none;
+// 			display:block;
+// 			width:100px;
+// 			text-align:center;
+// 			-webkit-border-radius:5px;
+// 			-moz-border-radius:5px;
+// 			border: 1px solid #000000;
+// 		}
+// 	}
+// 	.sublinks {
+// 		display:none;
+// 		a {
+// 			color:#000000;
+// 			background:#f6f6f6;
+// 			border-bottom:1px solid #cccccc;
+// 			font-weight:normal;
+// 			text-decoration:none;
+// 			display:block;
+// 			width:100px;
+// 			text-align:center;
+// 			margin-top:2px;
+// 			&:hover {
+// 				color:#000000;
+// 				background:#FFEFC6;
+// 				font-weight:normal;
+// 				text-decoration:none;
+// 				display:block;
+// 				width:100px;
+// 				text-align:center;
+// 			}
+// 		}
+// 	}
+// }
+
+/* CSS For Dropdown Menu End */
+
+// #menu {
+// 	margin:0px auto;
+// 	width:570px;
+// }
+
+// .clear {
+// 	clear:both;
+// }
+
+// .left {
+// 	float:left;
+// }
+
+// .right {
+// 	float:right;
+// }

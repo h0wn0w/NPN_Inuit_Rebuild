@@ -9,6 +9,9 @@
 $font-body: "proxima-nova",sans-serif;
 $font-heading: "proxima-nova",sans-serif;
 $grayblue: #586780;
+$light: 300;
+$regular: 400;
+$bold: 600;
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: $font-heading;
@@ -28,12 +31,27 @@ a, div, li, p, ul {
 	text-align: center;
 }
 
-a:visited {
+/* a:visited {
 	color: $grayblue;
-}
+} */
 
 div {
 	a {
 		word-wrap: break-word;
+		&:visited {
+			color: $grayblue;
+		}
 	}
+}
+
+.light {
+	font-weight: $light;
+}
+
+.regular {
+	font-weight: $regular;
+}
+
+.bold {
+	font-weight: $bold;
 }

@@ -30,9 +30,23 @@ $width: 70em;
 
 @mixin rounded($vert, $horz, $radius) {
 	border: {
+		// style: $style none none inset;
+		style: none;
+		width: $size *8;
+		// color: $grayblue;
+		radius: $radius;
+		#{$vert}#{$horz}: $radius;
+	}
+  -moz-border-radius-#{$vert}#{$horz}: $radius;
+  -webkit-border-#{$vert}-#{$horz}-#{$bm}-radius: $radius;
+}
+
+@mixin rounded-orange($vert, $horz, $radius) {
+	border: {
 		style: $style none none inset;
 		width: $size *8;
-		color: $grayblue;
+		// color: $grayblue;
+		color: $orange;
 		radius: $radius;
 		#{$vert}#{$horz}: $radius;
 	}
@@ -45,8 +59,27 @@ $width: 70em;
 	margin: 0 auto;
 }
 
+.boxx {
+	@include boxx;
+}
+
+.boxx-round {
+	@include boxx;
+	@include rounded(top, left, $radius);
+}
+
+.boxx-round-orange {
+	@include boxx;
+	@include rounded-orange(top, left, $radius);
+}
+
 .contain {
 	@include contain;
+}
+
+.contain-hide {
+	@include contain;
+	display: hidden;
 }
 
 .contain-menu {
@@ -64,9 +97,15 @@ $width: 70em;
 	background-color: $white-bright;
 }
 
-.contain-hide {
+.contain-well-orange {
 	@include contain;
-	display: hidden;
+	@include rounded-orange(top, left, $radius);
+	background-color: $white-bright;
+}
+
+.contain-dark {
+	@include contain;
+	background-color: $black-translucent;
 }
 
 .rounds {
@@ -79,6 +118,11 @@ $width: 70em;
 }
 
 .rounds-#{$tp} {
+	border: {
+		style: $style;
+		width: $size * 5;
+		color: $orange;
+	}
 	border-#{$tp}-radius: $radius;
 }
 
