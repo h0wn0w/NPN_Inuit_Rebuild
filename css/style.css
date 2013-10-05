@@ -865,7 +865,7 @@ ul, ol, dd {
     $MAIN
 \*------------------------------------*/
 html {
-  font: 1em/1.5 "Roboto", sans-serif;
+  font: 1em/1.5 "proxima-nova", sans-serif;
   overflow-y: scroll;
   min-height: 100%; }
 
@@ -1880,6 +1880,20 @@ label,
 .islet {
   padding: 12px; }
 
+/*------------------------------------*\
+    $ARROWS
+\*------------------------------------*/
+/**
+ * It is a common design treatment to give an element a triangular points-out
+ * arrow, we typically build these with CSS. These following classes allow us to
+ * generate these arbitrarily with a mixin, `@arrow()`.
+ */
+/**
+ * Forms the basis for any/all CSS arrows.
+ */
+/**
+ * Define individual edges so we can combine what we need, when we need.
+ */
 /*------------------------------------*\
     $BEAUTONS.CSS
 \*------------------------------------*/
@@ -3153,6 +3167,7 @@ body {
   height: auto;
   border-style: none;
   border-width: 8px;
+  border-#586780: #586780;
   border-radius: 8px;
   border-topleft: 8px;
   -moz-border-radius-topleft: 8px;
@@ -3206,6 +3221,7 @@ body {
   list-style: none;
   border-style: none;
   border-width: 8px;
+  border-#586780: #586780;
   border-radius: 8px;
   border-topleft: 8px;
   -moz-border-radius-topleft: 8px;
@@ -3244,15 +3260,20 @@ body {
   border-radius: 8px; }
 
 .rounds-top {
-  border-style: solid;
+  border-style: solid none none none;
   border-width: 5px;
   border-color: #ff7400;
   border-top-radius: 8px; }
 
 .rounds-bottom {
-  border-style: solid;
-  border-width: 3px;
-  border-bottom-radius: 8px; }
+  border-style: none none solid;
+  border-width: 5px;
+  border-color: #586780;
+  border-bottom-radius: 8px;
+  /* attach this to any class */ }
+
+:focus {
+  outline: none; }
 
 /*------------------------------------*\
     $COLORS
@@ -3416,6 +3437,86 @@ footer {
 /**
 * This provides for m'typography
 */
+/*------------------------------------*\
+    $COLORS
+\*------------------------------------*/
+body {
+  background-color: #eeeeee; }
+
+.black {
+  color: black; }
+
+.black-bg {
+  background-color: black; }
+
+.black-translucent {
+  background-color: rgba(0, 0, 0, 0.8); }
+
+.blue {
+  background-color: #3c4657; }
+
+.blue-dark {
+  background-color: #272e39; }
+
+.bluegray {
+  color: #3d5f99; }
+
+.bluegray-bg {
+  background-color: #3d5f99; }
+
+.cyan {
+  color: #00e5ff; }
+
+.cyan-bg {
+  background-color: #00e5ff; }
+
+.gray {
+  color: #999999; }
+
+.gray-bg {
+  background-color: #999999; }
+
+.grayblue {
+  color: #586780; }
+
+.green-dark {
+  color: #1b7f18; }
+
+.green-dark-bg {
+  background-color: #1b7f18; }
+
+.green-bright {
+  color: #76ff72; }
+
+.green-bright-bg {
+  background-color: #76ff72; }
+
+.orange {
+  color: #ff7400; }
+
+.orange-bg {
+  background-color: #ff7400; }
+
+.red {
+  color: #cc2d14; }
+
+.red-bg {
+  background-color: #cc2d14; }
+
+.white-bright {
+  color: white; }
+
+.white-bright-bg {
+  background-color: white; }
+
+.mainpage {
+  background-image: url("http://nnimages.s3.amazonaws.com/bookshelf.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  background-size: 100% 100%; }
+
 h1, h2, h3, h4, h5, h6 {
   font-family: "proxima-nova", sans-serif;
   font-weight: 600;
@@ -3445,3 +3546,15 @@ div a {
 
 .bold {
   font-weight: 600; }
+
+@media (max-width: 480px) {
+  .mainpage {
+    font-size: 48px; } }
+/*------------------------------------*\
+    $ADJUST
+\*------------------------------------*/
+/**
+* If "A" then "B" and so on.
+*/
+h3[class^="rounds"] {
+  cursor: pointer; }

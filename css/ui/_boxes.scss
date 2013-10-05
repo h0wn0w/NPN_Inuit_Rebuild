@@ -14,6 +14,7 @@ $tp: top;
 $bm: bottom;
 $radius: 8px;
 $width: 70em;
+$color: #000;
 
 @mixin boxx {
 	height: auto;
@@ -28,12 +29,12 @@ $width: 70em;
 	list-style: none;
 }
 
-@mixin rounded($vert, $horz, $radius) {
+@mixin rounded($vert, $horz, $radius, $color) {
 	border: {
 		// style: $style none none inset;
 		style: none;
 		width: $size *8;
-		// color: $grayblue;
+		#{$color}: $color;
 		radius: $radius;
 		#{$vert}#{$horz}: $radius;
 	}
@@ -65,7 +66,7 @@ $width: 70em;
 
 .boxx-round {
 	@include boxx;
-	@include rounded(top, left, $radius);
+	@include rounded(top, left, $radius, $grayblue);
 }
 
 .boxx-round-orange {
@@ -93,7 +94,7 @@ $width: 70em;
 
 .contain-well {
 	@include contain;
-	@include rounded(top, left, $radius);
+	@include rounded(top, left, $radius, $grayblue);
 	background-color: $white-bright;
 }
 
@@ -119,18 +120,25 @@ $width: 70em;
 
 .rounds-#{$tp} {
 	border: {
-		style: $style;
+		style: $style none none none;
 		width: $size * 5;
 		color: $orange;
+		#{$tp}-radius: $radius;
 	}
-	border-#{$tp}-radius: $radius;
 }
 
 .rounds-#{$bm} {
 	border: {
-		style: $style;
-		width: $size *3;
+		style: none none $style;
+		width: $size *5;
+		color: $grayblue;
 		#{$bm}-radius: $radius;
 	}
+	/* attach this to any class */
+
+// @include arrow(bottom, center, $orange, $bluegray)
 }
 
+:focus {
+  outline: none;
+}

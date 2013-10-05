@@ -9,55 +9,44 @@
 <!--#include virtual="${Base_URL}/templates/head.html" --></head>
 <body><!--#include virtual="${Base_URL}/templates/header.html" --><h1 class="page-title">About Us</h1><!--#include virtual="${Base_URL}/cgi/tags.cgi" -->
 
-<p>Neuropsych Now is all about getting you useful stuff, super fast.</p>
+<p class="lede">Neuropsych Now is all about getting you useful stuff, super fast.</p>
 
-<p>So what does that mean, exactly?</p>
+<p class="lede">So what does that mean, exactly?</p>
 
-<h2 id="we">We</h2>
+<h2>We</h2>
 
-<ul>
-<li>Write&#8230;
+<div id="tabs">
+	<ul>
+		<li><a href="#section-1">Write</a></li>
+		<li><a href="#section-2">Curate</a></li>
+		<li><a href="#section-3">Agree</a></li>
+		<li><a href="#section-4">Are</a></li>
+	</ul>
 
-<ul>
-<li>We write original, thoughtful <a href="articles.html">articles</a> about everything from recent advances in the field of neuropsychology to tips that can enhance your clinical efficiency.</li>
-</ul>
-</li>
-<li>Curate&#8230;
+<div id="section-1">
+<p>We write original, thoughtful <a href="articles.html">articles</a> about everything from recent advances in the field of neuropsychology to tips that can enhance your clinical efficiency.</p>
+</div>
+<div id="section-2">
+<p>Browse or search for quick snippets of <a href="/tags/">information</a>. Read <a href="articles.html">articles</a> that are easy to digest and offer uncommon insight. Download a <a href="downloads.html">converter or calculator</a> to make scoring easier. Find helpful <a href="neuroapps.html">iOS apps</a> or join <a href="extlinks.html">organizations or listservs</a>. Whatever you want, it&#8217;s all delivered right to your device, anywhere you are.</p>
+</div>
 
-<ul>
-<li>Browse or search for quick snippets of <a href="/tags/">information</a>. Read <a href="articles.html">articles</a> that are easy to digest and offer uncommon insight. Download a <a href="downloads.html">converter or calculator</a> to make scoring easier. Find helpful <a href="neuroapps.html">iOS apps</a> or join <a href="extlinks.html">organizations or listservs</a>. Whatever you want, it&#8217;s all delivered right to your device, anywhere you are.</li>
-</ul>
-</li>
-<li>Agree&#8230;
-
-<ul>
-<li>
-<h3 id="whyneuropsychnow">Why Neuropsych Now?</h3>
-
-<ul>
-<li>
+<div id="section-3">
+<h3>Why Neuropsych Now?</h3>
 <p>Not convinced that easy access to the most current information is important? Consider this quote from Alexander &amp; Roberts (1998):</p>
 
 <blockquote>
-<p>&#8220;The field of clinical psychology is diverse and informational material continually becomes available in a multitude of places. Because the half-life of psychological knowledge is brief, the need for updating and accessing resources is nearly constant for both researchers and practitioners alike.&#8221; <a href="#fn:1" id="fnref:1" title="see footnote" class="footnote">[1]</a></p>
+<p>The field of clinical psychology is diverse and informational material continually becomes available in a multitude of places. Because the half-life of psychological knowledge is brief, the need for updating and accessing resources is nearly constant for both researchers and practitioners alike.<a href="#fn:1" id="fnref:1" title="see footnote" class="footnote">[1]</a></p>
 </blockquote>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<p>Are&#8230;</p>
+</div>
 
-<h3 id="w.howardbuddinjr.ph.d.">W. Howard Buddin Jr., Ph.D.</h3>
-
+<div id="section-4">
+<h3>W. Howard Buddin Jr., Ph.D.</h3>
 <p>Dr. Buddin is a private practitioner in Mt. Pleasant, SC. His research interests include statistics, research methodology, and neurocognitive decline in adults. You can learn more about him at <a href="http://howardbuddin.com">his site</a>.</p>
 
-<h3 id="s.marctestaph.d.">S. Marc Testa, Ph.D.</h3>
-
+<h3>S. Marc Testa, Ph.D.</h3>
 <p>Dr. Testa is the Clinical Training Director for the Division of Neuropsychology at the Sandra and Malcolm Berman Brain &amp; Spine Institute. His research includes cognitive functioning among people with epilepsy and developing new approaches to measuring cognitive functioning.</p>
-</li>
-</ul>
+</div>
+</div>
 
 <div class="footnotes">
 <hr>
@@ -71,5 +60,14 @@
 </div>
 
 <!--#include virtual="${Base_URL}/templates/sidebar.html" -->
-<!--#include virtual="${Base_URL}/templates/footer.html" --></body>
+<!--#include virtual="${Base_URL}/templates/footer.html" -->
+
+  <script>
+  $(function() {
+    $( "#tabs" ).tabs({
+    	collapsible: true
+    }).addClass( "ui-tabs-collapsible" );
+  });
+  </script>
+</body>
 </html>

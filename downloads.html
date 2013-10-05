@@ -13,10 +13,10 @@
 
 <p>The categories are collapsed in order to make navigating the list a little easier. Just click (or tap for mobile users) on a category name to expand or collapse its list.</p>
 
-<p>Please note that many of these links will redirect you to a downloads page away from Neuropsych Now. The downloads may be in a zipped archive (.zip) format. If they do not automatically open after downloading, just double-click the .zip file and your computer should &#8220;unpack&#8221; the contents of the file.</p>
+<p>Many of these links will redirect you to a downloads page away from Neuropsych Now. The downloads may be in a zipped archive (.zip) format. If they do not automatically open after downloading, just double-click the .zip file and your computer should &#8220;unpack&#8221; the contents of the file.</p>
 
 <div id="testing">
-<h3>Testing &amp; Protocols</h3>
+<h3 class="rounds-bottom">Testing &amp; Protocols</h3>
 
 <ul>
 <li><a href="http://d.pr/f/TXoj">Aid to Capacity Evaluation (ACE)</a></li>
@@ -35,7 +35,7 @@
 <li><a href="http://d.pr/f/QQZJ">National Institutes of Health Stroke Scale</a></li>
 </ul>
 
-<h3>Templates, Calculators, &amp; Converters</h3>
+<h3 class="rounds-bottom">Templates, Calculators, &amp; Converters</h3>
 <ul>
 <li><a href="http://d.pr/f/B1QC">Excel Template for Patient Data</a></li>
 <li><a href="http://d.pr/f/UYIR">Peterson et al. Criteria For Mild Cognitive Impairment</a></li>
@@ -47,14 +47,15 @@
 <a href="http://d.pr/4wN5">Psychometrics Calculator</a> v 0.1 was sent to us, and written by, Brandon Gavett, Ph.D. Please see his site for complete information about this robust calculator</li>
 </ul>
 </div>
-
+<!--#include virtual="${Base_URL}/templates/sidebar.html" -->
 <!--#include virtual="${Base_URL}/templates/footer.html" -->
 
 <script>
   $(function() {
     $( "#testing" ).accordion({
       collapsible: true,
-      active: false
+      active: false,
+      heightStyle: "content"
     });
   });
 </script>

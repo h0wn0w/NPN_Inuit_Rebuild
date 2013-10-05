@@ -6,9 +6,10 @@
 * This provides for m'typography
 */
 
+@import "_main-colors";
+
 $font-body: "proxima-nova",sans-serif;
 $font-heading: "proxima-nova",sans-serif;
-$grayblue: #586780;
 $light: 300;
 $regular: 400;
 $bold: 600;
@@ -55,3 +56,9 @@ div {
 .bold {
 	font-weight: $bold;
 }
+
+@media (max-width: 480px) {
+      .mainpage {
+        font-size: $kilo-size;
+      }
+    }
