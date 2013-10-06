@@ -18,9 +18,13 @@ $white: #eee;
 $white-bright: #fff;
 
 body {
-	background-color: #eee
+	background-color: $white;
 	// background-image: url('/img/furley_bg_@2X.png');
 }
+
+// .debut {
+// 	background-image: url('/img/debut_dark_@2X.png');
+// }
 
 .black {
 	color: $black;
@@ -100,6 +104,14 @@ body {
 
 .red-bg {
 	background-color: $red;
+}
+
+.white {
+	color: $white;
+}
+
+.white-bg {
+	background-color: $white;
 }
 
 .white-bright {

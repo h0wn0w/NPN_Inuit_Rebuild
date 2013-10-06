@@ -3142,6 +3142,12 @@ body {
 .red-bg {
   background-color: #cc2d14; }
 
+.white {
+  color: #eeeeee; }
+
+.white-bg {
+  background-color: #eeeeee; }
+
 .white-bright {
   color: white; }
 
@@ -3341,6 +3347,12 @@ body {
 .red-bg {
   background-color: #cc2d14; }
 
+.white {
+  color: #eeeeee; }
+
+.white-bg {
+  background-color: #eeeeee; }
+
 .white-bright {
   color: white; }
 
@@ -3366,6 +3378,11 @@ header {
   padding: 0 10px 0 10px;
   text-shadow: none;
   text-decoration: none; }
+  header:hover {
+    -webkit-transform: translateZ(0px) rotateX(-10deg);
+    -moz-transform: translateZ(0px) rotateX(-10deg);
+    -o-transform: translateZ(0px) rotateX(-10deg);
+    transform: translateZ(0px) rotateX(-10deg); }
 
 .nav {
   background-color: #3c4657;
@@ -3409,27 +3426,91 @@ footer {
 /**
 * This provides for tweaking spaces like padding and margins
 */
+/*------------------------------------*\
+    $COLORS
+\*------------------------------------*/
 body {
-  margin: 0 auto; }
+  background-color: #eeeeee; }
 
-footer {
-  margin-top: 25%; }
+.black {
+  color: black; }
 
-.tall {
-  padding: 2em 1.5em; }
+.black-bg {
+  background-color: black; }
 
-.taller {
-  padding: 3em; }
+.black-translucent {
+  background-color: rgba(0, 0, 0, 0.8); }
 
-.tallest {
-  width: 80%;
-  padding: 4em; }
+.blue {
+  background-color: #3c4657; }
 
-.tall-narrow {
-  padding: 2em 0em; }
+.blue-dark {
+  background-color: #272e39; }
 
-.tags {
-  padding-bottom: 2em; }
+.bluegray {
+  color: #3d5f99; }
+
+.bluegray-bg {
+  background-color: #3d5f99; }
+
+.cyan {
+  color: #00e5ff; }
+
+.cyan-bg {
+  background-color: #00e5ff; }
+
+.gray {
+  color: #999999; }
+
+.gray-bg {
+  background-color: #999999; }
+
+.grayblue {
+  color: #586780; }
+
+.green-dark {
+  color: #1b7f18; }
+
+.green-dark-bg {
+  background-color: #1b7f18; }
+
+.green-bright {
+  color: #76ff72; }
+
+.green-bright-bg {
+  background-color: #76ff72; }
+
+.orange {
+  color: #ff7400; }
+
+.orange-bg {
+  background-color: #ff7400; }
+
+.red {
+  color: #cc2d14; }
+
+.red-bg {
+  background-color: #cc2d14; }
+
+.white {
+  color: #eeeeee; }
+
+.white-bg {
+  background-color: #eeeeee; }
+
+.white-bright {
+  color: white; }
+
+.white-bright-bg {
+  background-color: white; }
+
+.mainpage {
+  background-image: url("http://nnimages.s3.amazonaws.com/bookshelf.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  background-size: 100% 100%; }
 
 /*------------------------------------*\
     $TYPOGRAPHY
@@ -3502,6 +3583,171 @@ body {
 
 .red-bg {
   background-color: #cc2d14; }
+
+.white {
+  color: #eeeeee; }
+
+.white-bg {
+  background-color: #eeeeee; }
+
+.white-bright {
+  color: white; }
+
+.white-bright-bg {
+  background-color: white; }
+
+.mainpage {
+  background-image: url("http://nnimages.s3.amazonaws.com/bookshelf.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  background-size: 100% 100%; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "proxima-nova", sans-serif;
+  font-weight: 600;
+  text-shadow: none;
+  text-decoration: none; }
+
+a, div, li, p, ul {
+  font-family: "proxima-nova", sans-serif;
+  font-weight: 300; }
+
+.center {
+  text-align: center; }
+
+/* a:visited {
+	color: $grayblue;
+} */
+div a {
+  word-wrap: break-word; }
+  div a:visited {
+    color: #586780; }
+
+.light {
+  font-weight: 300; }
+
+.regular {
+  font-weight: 400; }
+
+.bold {
+  font-weight: 600; }
+
+@media (max-width: 480px) {
+  .mainpage {
+    font-size: 48px; } }
+body {
+  margin: 0 auto; }
+
+footer {
+  margin-top: 25%; }
+
+.tall {
+  padding: 2em 1.5em; }
+
+.taller {
+  padding: 3em; }
+
+.tallest {
+  width: 80%;
+  padding: 4em; }
+
+.tall-narrow {
+  padding: 2em 0em; }
+
+.tags {
+  padding-bottom: 2em;
+  font-weight: 600; }
+  .tags a {
+    font-weight: 600; }
+  .tags > a {
+    font-weight: 600;
+    padding: 0.2em;
+    color: white;
+    background-color: #ff7400; }
+    .tags > a:visited {
+      color: white; }
+    .tags > a:hover {
+      background-color: #00e5ff; }
+
+/*------------------------------------*\
+    $TYPOGRAPHY
+\*------------------------------------*/
+/**
+* This provides for m'typography
+*/
+/*------------------------------------*\
+    $COLORS
+\*------------------------------------*/
+body {
+  background-color: #eeeeee; }
+
+.black {
+  color: black; }
+
+.black-bg {
+  background-color: black; }
+
+.black-translucent {
+  background-color: rgba(0, 0, 0, 0.8); }
+
+.blue {
+  background-color: #3c4657; }
+
+.blue-dark {
+  background-color: #272e39; }
+
+.bluegray {
+  color: #3d5f99; }
+
+.bluegray-bg {
+  background-color: #3d5f99; }
+
+.cyan {
+  color: #00e5ff; }
+
+.cyan-bg {
+  background-color: #00e5ff; }
+
+.gray {
+  color: #999999; }
+
+.gray-bg {
+  background-color: #999999; }
+
+.grayblue {
+  color: #586780; }
+
+.green-dark {
+  color: #1b7f18; }
+
+.green-dark-bg {
+  background-color: #1b7f18; }
+
+.green-bright {
+  color: #76ff72; }
+
+.green-bright-bg {
+  background-color: #76ff72; }
+
+.orange {
+  color: #ff7400; }
+
+.orange-bg {
+  background-color: #ff7400; }
+
+.red {
+  color: #cc2d14; }
+
+.red-bg {
+  background-color: #cc2d14; }
+
+.white {
+  color: #eeeeee; }
+
+.white-bg {
+  background-color: #eeeeee; }
 
 .white-bright {
   color: white; }
