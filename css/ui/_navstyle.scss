@@ -24,12 +24,12 @@ header {
   		shadow: none;
 	  	decoration: none;
 	}
-	&:hover {
-		-webkit-transform: translateZ( 0px ) rotateX(  -10deg );
-		 -moz-transform: translateZ( 0px ) rotateX(  -10deg );
-		   -o-transform: translateZ( 0px ) rotateX(  -10deg );
-		      transform: translateZ( 0px ) rotateX(  -10deg );
-	}
+	// &:hover {
+	// 	-webkit-transform: translateZ( 0px ) rotateX(  -10deg );
+	// 	 -moz-transform: translateZ( 0px ) rotateX(  -10deg );
+	// 	   -o-transform: translateZ( 0px ) rotateX(  -10deg );
+	// 	      transform: translateZ( 0px ) rotateX(  -10deg );
+	// }
 }
 
 

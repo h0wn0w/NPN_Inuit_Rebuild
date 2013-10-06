@@ -38,23 +38,3 @@ footer {
 .tall-narrow {
 	padding: $tall 0em;
 }
-
-.tags {
-	padding-bottom: $tall;
-	font-weight: $bold;
-	a {
-		font-weight: $bold;
-	}
-	> a {
-		font-weight: $bold;
-		padding: 0.2em;
-		color: $white-bright;
-		background-color: $orange;
-		&:visited {
-			color: $white-bright;		
-		}
-		&:hover {
-			background-color: $cyan;
-		}
-	}
-}
