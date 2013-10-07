@@ -1,20 +1,16 @@
 /* Global
 ------------------------------ */
 
-body {
+/*body {
     font: 62.5%/1.4 helvetica, arial, sans-serif; 
     padding: 2em 1em;
-}
+}*/
 
 #logo {
    float: left;
    margin: 0 0 1em; 
 }
-p {
-   font-size: 1.8em;
-   line-height: 1.4;
-   margin: 0 .3em 1em;
-}
+
 .content {
    clear: both;
 }
@@ -40,7 +36,7 @@ a.skip {
 }
 .nav-primary li {
    font-size: 1.8em;
-   border-bottom: 1px solid #eee;
+   /*border-bottom: 1px solid #eee;*/
 }
 .nav-primary li:last-child {
    border-bottom: 0;
@@ -73,9 +69,9 @@ a.skip {
    left: auto;
    right: 0;
    display: block;
-   width: 4em;
-   height: 4.5em; 
-   background: #ccc url(img/icons.png) no-repeat -205px 45%;
+   width: 1.5em;
+   height: 2.5em; 
+   background: #ccc url(/img/icons.png) no-repeat -205px 45%;
    text-indent: -999em;
    cursor: pointer;
 }
@@ -94,7 +90,7 @@ a.skip {
    border-bottom-width: 0;
 }
 .nav-menu .nav-primary.expanded li.nav-current {
-   border-bottom-width: 1px;
+   border-bottom-width: 0;
 }
 
 
