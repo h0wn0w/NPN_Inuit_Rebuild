@@ -4037,4 +4037,5 @@ footer {
     .tags > a:visited {
       color: white; }
     .tags > a:hover {
+      color: black;
       background-color: #00e5ff; }
