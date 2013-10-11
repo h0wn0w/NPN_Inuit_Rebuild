@@ -6,17 +6,18 @@
 * This provides for m'typography
 */
 
-@import "_main-colors";
+// @import "_main-colors";
 
-$font-body: "proxima-nova",sans-serif;
-$font-heading: "proxima-nova",sans-serif;
+// $font-body: "proxima-nova",sans-serif;
+$font-body: $base-font-family;
+$font-heading: $base-font-family;
 $light: 300;
 $regular: 400;
 $bold: 600;
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: $font-heading;
-	font-weight: 600;
+	font-weight: $bold;
 	text: {
 		shadow: none;
 		decoration: none;
@@ -25,7 +26,7 @@ h1, h2, h3, h4, h5, h6 {
 
 a, div, li, p, ul {
 	font-family: $font-body;
-	font-weight: 300;
+	font-weight: $light;
 }
 
 .center {

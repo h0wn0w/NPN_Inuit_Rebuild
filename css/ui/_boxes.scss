@@ -6,7 +6,7 @@
 * This provides for creation of containers, wells, borders, etc.
 */
 
-@import "_main-colors";
+// @import "_main-colors";
 
 $style: solid;
 $size: 1px;
@@ -18,6 +18,7 @@ $color: #000;
 
 @mixin boxx {
 	height: auto;
+	// width: 25%;
 }
 
 @mixin contain {
@@ -37,9 +38,9 @@ $color: #000;
 		#{$color}: $color;
 		radius: $radius;
 		#{$vert}#{$horz}: $radius;
+	-moz-border-radius-#{$vert}#{$horz}: $radius;
+	-webkit-border-#{$vert}-#{$horz}-#{$bm}-radius: $radius;
 	}
-  -moz-border-radius-#{$vert}#{$horz}: $radius;
-  -webkit-border-#{$vert}-#{$horz}-#{$bm}-radius: $radius;
 }
 
 @mixin rounded-orange($vert, $horz, $radius) {
@@ -68,6 +69,7 @@ $color: #000;
 }
 
 .article {
+	font-size: $base-font-size +4;
 	max-width: $width - 20em;
 	margin: 0 auto;
 }
@@ -84,6 +86,7 @@ $color: #000;
 .boxx-round-orange {
 	@include boxx;
 	@include rounded-orange(top, left, $radius);
+	width: 25%;
 }
 
 .code {
@@ -120,6 +123,12 @@ $color: #000;
 	background-color: $white-bright;
 }
 
+.contain-well-quarter-orange {
+	@include contain;
+	@include rounded-orange(top, left, $radius);
+	width: 25%;
+}
+
 .contain-dark {
 	@include contain;
 	background-color: $black-translucent;
@@ -153,6 +162,10 @@ $color: #000;
 	/* attach this to any class */
 
 // @include arrow(bottom, center, $orange, $bluegray)
+}
+
+.sidebar {
+	max-width: 20em;
 }
 
 :focus {
