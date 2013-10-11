@@ -14,7 +14,6 @@
 
 # Others specific to this site build
 .htaccess
-.htpasswd
 *.sublime-project
 *.sublime-workspace
 sphider/admin/*

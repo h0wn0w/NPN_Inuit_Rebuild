@@ -17,11 +17,11 @@ Here's how it works. [^1]
 2. Select the "AutoCorrect" tab from the available menu options. You'll see two blank fields as shown in the screenshot below: "Replace:" and "With:". While these are already pre-populated with the default Word settings, you are free to add your own. This is, in our experience, not common knowledge.  
 
 ![Word's Preferences/Options Menu][exec]  
-3. Think of a word or phrase that you frequently type, like "executive functioning." This is going to be your target. Now, think of a short way to express that, preferably in a way that is sane and easy to remember. This will be your "shortcut" that you'll type instead of the word(s). Here, we'll use ";ef" (the `;` is prepended to set it apart from other words that begin with "ef," such as "effort"). Type that in the "Replace:" field. Now, type "executive functioning" in the "With:" field.  
+3. Think of a word or phrase that you frequently type, like "executive functioning." This is going to be your target. Now, think of a short way to express that, preferably in a way that is sane and easy to remember. This will be your "shortcut" that you'll type instead of the word(s). Here, we'll use `;ef` (the `;` is prepended to set it apart from other words that begin with `ef` such as "effort"). Type that in the "Replace:" field. Now, type "executive functioning" in the "With:" field.  
 ![Entering Fields][fields]  
 4. Click "Add" followed by "OK" (or "Apply" for Windows users).
 
-That's it! Next time you type out ";ef" it will expand automatically to read "executive functioning." This trick can be expanded on to include anything you would rather not type, including *entire, formatted report sturctures*, headings and all. 
+That's it! Next time you type out `;ef` it will expand automatically to read "executive functioning." This trick can be expanded on to include anything you would rather not type, including *entire, formatted report sturctures*, headings and all. 
 
 Here's how to get that to work.
 

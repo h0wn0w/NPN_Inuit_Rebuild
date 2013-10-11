@@ -55,6 +55,18 @@ $color: #000;
   -webkit-border-#{$vert}-#{$horz}-#{$bm}-radius: $radius;
 }
 
+@mixin rounded-red($vert, $horz, $radius, $color) {
+	border: {
+		style: $style;
+		width: $size;
+		color: $red;
+		radius: $radius;
+		#{$vert}#{$horz}: $radius;
+	}
+  -moz-border-radius-#{$vert}#{$horz}: $radius;
+  -webkit-border-#{$vert}-#{$horz}-#{$bm}-radius: $radius;
+}
+
 .article {
 	max-width: $width - 20em;
 	margin: 0 auto;
@@ -72,6 +84,10 @@ $color: #000;
 .boxx-round-orange {
 	@include boxx;
 	@include rounded-orange(top, left, $radius);
+}
+
+.code {
+	@include rounded-red (bottom, left, $radius/2, $red);
 }
 
 .contain {
