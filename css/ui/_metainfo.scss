@@ -6,20 +6,16 @@
 * Set options exclusive to meta info, such as tags and authors
 */
 
-@import "_spacing";
+// @import "_spacing";
 
 .author, .date {
-	// font-weight: $bold;
+	font-weight: bold;
 }
 
 .tags {
 	padding-bottom: $tall;
-	font-weight: $bold;
-	// a {
-	// 	font-weight: $bold;
-	// }
+	font-weight: bold;
 	> a {
-		// font-weight: $bold;
 		padding: 0.2em;
 		color: $white-bright;
 		background-color: $orange;

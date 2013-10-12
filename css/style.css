@@ -44,6 +44,10 @@
 /**
  * Place any of your own variables that sit on top of inuit.css here.
  */
+/**
+* Ground Control to Major Tom - scratch that - Ground Control to Howard
+* The variables below are global. Global. Global. Global.
+*/
 /*------------------------------------*\
     INUIT.CSS
 \*------------------------------------*/
@@ -3078,7 +3082,7 @@ label,
 */
 .article {
   font-size: 20px;
-  max-width: 50em;
+  max-width: 30em;
   margin: 0 auto; }
 
 .boxx {
@@ -3438,34 +3442,12 @@ h3[class^="rounds"] {
 /**
 * Set options exclusive to meta info, such as tags and authors
 */
-/*------------------------------------*\
-    $SPACING
-\*------------------------------------*/
-/**
-* This provides for tweaking spaces like padding and margins
-*/
-body {
-  margin: 0 auto; }
-
-footer {
-  margin-top: 25%; }
-
-.tall {
-  padding: 2em 1.5em; }
-
-.taller {
-  padding: 3em; }
-
-.tallest {
-  width: 80%;
-  padding: 4em; }
-
-.tall-narrow {
-  padding: 2em 0em; }
+.author, .date {
+  font-weight: bold; }
 
 .tags {
   padding-bottom: 2em;
-  font-weight: 600; }
+  font-weight: bold; }
   .tags > a {
     padding: 0.2em;
     color: white;
