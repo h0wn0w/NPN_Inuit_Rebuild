@@ -68,12 +68,6 @@ $color: #000;
   -webkit-border-#{$vert}-#{$horz}-#{$bm}-radius: $radius;
 }
 
-.article {
-	font-size: $base-font-size +4;
-	max-width: $width - 40em;
-	margin: 0 auto;
-}
-
 .boxx {
 	@include boxx;
 }
