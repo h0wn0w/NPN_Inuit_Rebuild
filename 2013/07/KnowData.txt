@@ -1,8 +1,8 @@
-Title:					What Data Are And Are Not
-Author:					W. Howard Buddin Jr., Ph.D.
-Date:					07/19/2013 
-Tags:					Data, Research, Statistics
-Base Header Level:					1
+Title:			What Data Are And Are Not
+Author:			W. Howard Buddin Jr., Ph.D.
+Date:			07/19/2013 
+Category:		Article  
+Tags:			Data, Research, Statistics
 
 The Guardian has an excellent post on [what data are and are not](http://www.guardian.co.uk/news/datablog/2012/may/31/data-journalism-focused-critical). The post's author, [Jonathan Gray](http://www.guardian.co.uk/profile/jonathan-gray), makes several excellent points. Among them is the near axiomatic truth that conclusions are frequently rolled out by entities that don't really understand what the underlying data are really saying.  
 

@@ -1,8 +1,8 @@
 Title:		Use Microsoft Word's AutoCorrect Feature to Expand Text
 Author: 	W. Howard Buddin Jr., Ph.D.
-Web:		http://neuropsychnow.com
 Date:		07/10/2013
-Tags:		Applications, Mac, Productivity, Reports, Writing, Tech, Word 
+Category:	Article  
+Tags:		Applications, Mac, Productivity, Reports, Tech, Word, Writing 
 
 We've [talked before] about our relative disdain for Microsoft Word.  The grim reality (for us, anyway) is that most institutions still expect to get and receive reports that are composed in Word. Such is the way. 
 

@@ -1,7 +1,8 @@
-Title:		Getting Reports Done
-Author:		S. Marc Testa, Ph.D.
-Date:               07/29/2013 
-Tags:              Dictation, Productivity, Reports, Workflow
+Title:			Getting Reports Done
+Author:			S. Marc Testa, Ph.D.
+Date:           07/29/2013 
+Category:		Article  
+Tags:			Dictation, Productivity, Reports, Workflow
 
 Every once in a while, it's a good idea to consider if you are working as efficiently as possible. If you are prone to tinkering, however, this can be tricky business. *Trying to improve your productivity does not mean you are being more productive.* 
 

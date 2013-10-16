@@ -1,6 +1,7 @@
 Title:				Is Alzheimer's Disease Really What We Think It Is?
-Author: 			W. Howard Buddin Jr., Ph.D.
+Author: 			W. Howard Buddin Jr., Ph.D. & S. Marc Testa, Ph.D.
 Date:				08/27/2013 
+Category:			Article  
 Tags:				Dementia, Diagnostics, Pathology, Practice, Syndromes
 
 An estimated 5.4 million Americans have Dementia of the Alzheimer's Type (AD). This includes approximately 200,000 individuals with early onset AD (under the age of 65; Alzheimer's Association, 2012). Alzheimer's is a neuropathological *disease* that is well in motion by the time memory or other cognitive problems surface and a patient is referred to a memory clinic. Some evidence suggests Alzheimer's pathology begins in different areas of the brain stem, but *symptoms* (like memory dysfunction) appear later in the course of the disease when cortical regions become dysfunctional. One main goal of current research is to detect the presence of the disease, prior to symptom onset, so appropriate interventions can be developed.

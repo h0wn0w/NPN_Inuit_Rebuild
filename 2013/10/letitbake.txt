@@ -1,6 +1,7 @@
-Title:		Let it Bake
-Author:		W. Howard Buddin Jr., Ph.D.
+Title:			Let it Bake
+Author:			W. Howard Buddin Jr., Ph.D.
 Date:           10/07/2013 
+Category:		Article  
 Tags:           Report, Writing
 
 

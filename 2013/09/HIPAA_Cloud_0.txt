@@ -1,7 +1,8 @@
-Title:	HIPAA in the Cloud - A Very Short Intro (Part 0)
-Author:	W. Howard Buddin, Jr., Ph.D. & S. Marc Testa, Ph.D.
-Date:	09/09/2013 
-Tags:	Clinical, Data, EMR, HIPAA, HITECH, PHI, Practice
+Title:			HIPAA in the Cloud - A Very Short Intro (Part 0)
+Author:			W. Howard Buddin, Jr., Ph.D. & S. Marc Testa, Ph.D.
+Date:			09/09/2013 
+Category:		Article  
+Tags:			Clinical, Data, EMR, HIPAA, HITECH, PHI, Practice
 
 All psychologists have some understanding of HIPAA (The Health Insurance Portability and Accountability Act of 1996) Privacy and Security rules. Indeed, all students since the late nineties should have received at least *some* exposure to HIPAA as part of their graduate education. Advancing technologies, however, have broadened the scope of how Protected Health Information (PHI) is transmitted and stored. Electronic Medical Records (EMR) have, therefore, made HIPAA adherence a very different animal and is a topic that falls under the rubric of "*things they didn't teach you in graduate school*." 
 

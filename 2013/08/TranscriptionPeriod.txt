@@ -1,7 +1,7 @@
 Title:				Transcription Period
 Author:				S. Marc Testa, Ph.D.
-Web:				http://neuropsychnow.com
 Date:				08/27/2013
+Category:			Article  
 Tags:	            Applications, Dictation, Practice, Productivity, Reports, Tech, Writing, Workflow
 
 ![][dictamus]

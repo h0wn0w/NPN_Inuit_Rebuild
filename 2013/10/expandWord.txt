@@ -1,7 +1,8 @@
-Title:		Text Expansion with Microsoft Word
-Author:		W. Howard Buddin Jr., Ph.D.
-Date:       10/10/2013 
-Tags:       Practice, Productivity, Reports, Screencast, Workflow, Writing
+Title:			Text Expansion with Microsoft Word
+Author:			W. Howard Buddin Jr., Ph.D.
+Date:       	10/10/2013 
+Category:		Article  
+Tags:       	Practice, Productivity, Reports, Screencast, Workflow, Writing
 
 Writing in plain text is, to us, largely superior to using a full-blown word processor. Plain text *files* are lightweight and versatile. Plain text *editors* are, relative to most word processors, free of questionably useful features, leaving a distraction-free writing environment. In one of our [previous screencasts](http://neuronow.com/2013/08/gettingreportsdone_2), we demonstrated some of the benefits of writing reports with [TextExpander for Mac](http://smilesoftware.com/TextExpander/index.html). 
 

@@ -1,7 +1,7 @@
 Title:				Excel Spreadsheet Building Blocks II: NORMSDIST and NORMDIST
 Author:				S. Marc Testa, Ph.D.
-Web:				http://neuropsychnow.com
 Date:				07/10/2013
+Category:			Article  
 Tags:				Data, Multimarkdown, Reports, Statistics, Tables 
 Base Header Level:	1
 
