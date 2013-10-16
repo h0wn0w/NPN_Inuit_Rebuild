@@ -1885,6 +1885,62 @@ label,
   padding: 12px; }
 
 /*------------------------------------*\
+    $FLYOUT
+\*------------------------------------*/
+/**
+ * Flyouts are pieces of content that fly out of a parent when said parent is
+ * hovered. They typically appear bottom-left of the parent.
+ *
+   <div class=flyout>
+       Foo
+       <div class=flyout__content>
+           <h1>Lorem</h1>
+           <p>Ipsum</p>
+       </div>
+   </div>
+ *
+ * Extend these objects in your theme stylesheet.
+ *
+ * Demo: jsfiddle.net/inuitcss/B52HG
+ *
+ */
+.flyout,
+.flyout--alt {
+  position: relative;
+  overflow: hidden; }
+
+.flyout__content {
+  /**
+   * Position the flyouts off-screen. This is typically better than
+   * `display:none;`.
+   */
+  position: absolute;
+  top: 100%;
+  left: -99999px; }
+
+/**
+ * Bring the flyouts into view when you hover their parents.
+ * Two different types of flyout; ‘regular’ (`.flyout`) and ‘alternative’
+ * (`.flyout--alt`).
+ */
+.flyout:hover,
+.flyout--alt:hover {
+  overflow: visible; }
+
+/**
+ * Regular flyouts sit all the way from the top, flush left.
+ */
+.flyout:hover > .flyout__content {
+  left: 0; }
+
+/**
+ * Alternative flyouts sit all the way from the left, flush top.
+ */
+.flyout--alt:hover > .flyout__content {
+  top: 0;
+  left: 100%; }
+
+/*------------------------------------*\
     $ARROWS
 \*------------------------------------*/
 /**
@@ -3080,11 +3136,6 @@ label,
 /**
 * This provides for creation of containers, wells, borders, etc.
 */
-.article {
-  font-size: 20px;
-  max-width: 30em;
-  margin: 0 auto; }
-
 .boxx {
   height: auto; }
 
@@ -3106,8 +3157,7 @@ label,
   border-radius: 8px;
   border-topleft: 8px;
   -moz-border-radius-topleft: 8px;
-  -webkit-border-top-left-bottom-radius: 8px;
-  width: 25%; }
+  -webkit-border-top-left-bottom-radius: 8px; }
 
 .code {
   border-style: solid;
@@ -3118,7 +3168,7 @@ label,
   -moz-border-radius-bottomleft: 4px;
   -webkit-border-bottom-left-bottom-radius: 4px; }
 
-.contain {
+.contain, .contain-hide {
   height: auto;
   width: auto;
   margin: 1em;
@@ -3127,12 +3177,6 @@ label,
   list-style: none; }
 
 .contain-hide {
-  height: auto;
-  width: auto;
-  margin: 1em;
-  padding: 2em;
-  position: relative;
-  list-style: none;
   display: hidden; }
 
 .contain-menu {
@@ -3154,45 +3198,32 @@ label,
   padding: 2em;
   position: relative;
   list-style: none;
+  background-color: white;
   border-style: none;
   border-width: 8px;
   border-#586780: #586780;
   border-radius: 8px;
   border-topleft: 8px;
   border--moz-border-radius-topleft: 8px;
-  border--webkit-border-top-left-bottom-radius: 8px;
-  background-color: white; }
+  border--webkit-border-top-left-bottom-radius: 8px; }
 
-.contain-well-orange {
+.contain-well-orange, .contain-well-quarter-orange {
   height: auto;
   width: auto;
   margin: 1em;
   padding: 2em;
   position: relative;
   list-style: none;
+  background-color: white;
   border-style: solid none none inset;
   border-width: 8px;
   border-color: #ff7400;
   border-radius: 8px;
   border-topleft: 8px;
   -moz-border-radius-topleft: 8px;
-  -webkit-border-top-left-bottom-radius: 8px;
-  background-color: white; }
+  -webkit-border-top-left-bottom-radius: 8px; }
 
 .contain-well-quarter-orange {
-  height: auto;
-  width: auto;
-  margin: 1em;
-  padding: 2em;
-  position: relative;
-  list-style: none;
-  border-style: solid none none inset;
-  border-width: 8px;
-  border-color: #ff7400;
-  border-radius: 8px;
-  border-topleft: 8px;
-  -moz-border-radius-topleft: 8px;
-  -webkit-border-top-left-bottom-radius: 8px;
   width: 25%; }
 
 .contain-dark {
@@ -3442,6 +3473,11 @@ h3[class^="rounds"] {
 /**
 * Set options exclusive to meta info, such as tags and authors
 */
+.article {
+  font-size: 20px;
+  max-width: 30em;
+  margin: 0 auto; }
+
 .author, .date {
   font-weight: bold; }
 

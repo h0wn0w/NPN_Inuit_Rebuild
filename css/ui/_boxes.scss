@@ -32,7 +32,6 @@ $color: #000;
 
 @mixin rounded($vert, $horz, $radius, $color) {
 	border: {
-		// style: $style none none inset;
 		style: none;
 		width: $size *8;
 		#{$color}: $color;
@@ -80,7 +79,7 @@ $color: #000;
 .boxx-round-orange {
 	@include boxx;
 	@include rounded-orange(top, left, $radius);
-	width: 25%;
+	// width: 25%;
 }
 
 .code {
@@ -92,7 +91,7 @@ $color: #000;
 }
 
 .contain-hide {
-	@include contain;
+	@extend .contain;
 	display: hidden;
 }
 
@@ -107,19 +106,18 @@ $color: #000;
 
 .contain-well {
 	@include contain;
-	@include rounded(top, left, $radius, $grayblue);
 	background-color: $white-bright;
+	@include rounded(top, left, $radius, $grayblue);
 }
 
 .contain-well-orange {
 	@include contain;
+	background-color: $white-bright;	
 	@include rounded-orange(top, left, $radius);
-	background-color: $white-bright;
 }
 
 .contain-well-quarter-orange {
-	@include contain;
-	@include rounded-orange(top, left, $radius);
+	@extend .contain-well-orange;
 	width: 25%;
 }
 
