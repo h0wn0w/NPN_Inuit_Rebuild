@@ -19,6 +19,7 @@ $color: #000;
 @mixin boxx {
 	height: auto;
 	// width: 25%;
+	padding: 1em;
 }
 
 @mixin contain {
@@ -96,7 +97,7 @@ $color: #000;
 }
 
 .contain-menu {
-	@include contain;
+	@extend .contain;
 	width: 300px;
 	background-color: $white;
 		li {
@@ -105,13 +106,13 @@ $color: #000;
 	}
 
 .contain-well {
-	@include contain;
+	@extend .contain;
 	background-color: $white-bright;
 	@include rounded(top, left, $radius, $grayblue);
 }
 
 .contain-well-orange {
-	@include contain;
+	@extend .contain;
 	background-color: $white-bright;	
 	@include rounded-orange(top, left, $radius);
 }
@@ -122,7 +123,8 @@ $color: #000;
 }
 
 .contain-dark {
-	@include contain;
+	@extend .boxx;
+	width: auto;
 	background-color: $black-translucent;
 }
 

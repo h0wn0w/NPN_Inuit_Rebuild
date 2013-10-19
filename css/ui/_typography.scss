@@ -58,8 +58,8 @@ div {
 	font-weight: $bold;
 }
 
-@media (max-width: 480px) {
-      .mainpage {
+@media screen and (max-width: 480px) {
+      h1 {
         font-size: $kilo-size;
       }
     }

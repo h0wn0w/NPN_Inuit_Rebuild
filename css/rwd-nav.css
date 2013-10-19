@@ -31,9 +31,9 @@ a.skip {
    position: absolute;
    left: -999em;
 }
-/*.nav-primary ul {
+.nav-primary ul {
    border: 1px solid #e6e6e6;
-}*/
+}
 .nav-primary li {
    font-size: 1.8em;
    /*border-bottom: 1px solid #eee;*/
@@ -107,7 +107,7 @@ a.skip {
    }
    .nav-primary li {
       float: left;
-      font-size: 1.5em;
+      font-size: 1.2em;
       border-bottom: 0;
    }   
 }

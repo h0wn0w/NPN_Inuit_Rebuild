@@ -3136,11 +3136,13 @@ label,
 /**
 * This provides for creation of containers, wells, borders, etc.
 */
-.boxx {
-  height: auto; }
+.boxx, .contain-dark {
+  height: auto;
+  padding: 1em; }
 
 .boxx-round {
   height: auto;
+  padding: 1em;
   border-style: none;
   border-width: 8px;
   border-#586780: #586780;
@@ -3151,6 +3153,7 @@ label,
 
 .boxx-round-orange {
   height: auto;
+  padding: 1em;
   border-style: solid none none inset;
   border-width: 8px;
   border-color: #ff7400;
@@ -3168,7 +3171,7 @@ label,
   -moz-border-radius-bottomleft: 4px;
   -webkit-border-bottom-left-bottom-radius: 4px; }
 
-.contain, .contain-hide {
+.contain, .contain-hide, .contain-menu, .contain-well, .contain-well-orange, .contain-well-quarter-orange {
   height: auto;
   width: auto;
   margin: 1em;
@@ -3180,24 +3183,12 @@ label,
   display: hidden; }
 
 .contain-menu {
-  height: auto;
-  width: auto;
-  margin: 1em;
-  padding: 2em;
-  position: relative;
-  list-style: none;
   width: 300px;
   background-color: #eeeeee; }
   .contain-menu li {
     list-style: none; }
 
 .contain-well {
-  height: auto;
-  width: auto;
-  margin: 1em;
-  padding: 2em;
-  position: relative;
-  list-style: none;
   background-color: white;
   border-style: none;
   border-width: 8px;
@@ -3208,12 +3199,6 @@ label,
   border--webkit-border-top-left-bottom-radius: 8px; }
 
 .contain-well-orange, .contain-well-quarter-orange {
-  height: auto;
-  width: auto;
-  margin: 1em;
-  padding: 2em;
-  position: relative;
-  list-style: none;
   background-color: white;
   border-style: solid none none inset;
   border-width: 8px;
@@ -3227,12 +3212,7 @@ label,
   width: 25%; }
 
 .contain-dark {
-  height: auto;
   width: auto;
-  margin: 1em;
-  padding: 2em;
-  position: relative;
-  list-style: none;
   background-color: rgba(0, 0, 0, 0.8); }
 
 .rounds {
@@ -3339,7 +3319,7 @@ body {
   background-color: white; }
 
 .mainpage {
-  background-image: url("http://nnimages.s3.amazonaws.com/bookshelf.png");
+  background-image: url("/img/bookshelf.png");
   background-repeat: no-repeat;
   background-position: center;
   -webkit-background-size: 100% 100%;
@@ -3358,25 +3338,24 @@ header {
   text-shadow: none;
   text-decoration: none; }
 
-.nav {
-  background-color: #3c4657;
+.nave {
   display: inline; }
-  .nav li {
+  .nave li {
     list-style: none; }
-    .nav li:first-child {
+    .nave li:first-child {
       border-top-left-radius: 8px;
       -moz-border-radius-topleft: 8px;
       -webkit-border-top-left-radius: 8px; }
-    .nav li:last-child {
+    .nave li:last-child {
       border-top-left-radius: 5px;
       -moz-border-radius-topleft: 5px;
       -webkit-border-top-left-radius: 5px; }
-    .nav li a {
+    .nave li a {
       color: #999999;
       padding: 0.5em;
       text-shadow: none;
       text-decoration: none; }
-      .nav li a:hover {
+      .nave li a:hover {
         color: #eee8d5;
         background-color: transparent; }
 
@@ -3455,8 +3434,8 @@ div a {
 .bold {
   font-weight: 600; }
 
-@media (max-width: 480px) {
-  .mainpage {
+@media screen and (max-width: 480px) {
+  h1 {
     font-size: 48px; } }
 /*------------------------------------*\
     $ADJUST
