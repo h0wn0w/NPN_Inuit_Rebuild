@@ -1951,9 +1951,29 @@ label,
 /**
  * Forms the basis for any/all CSS arrows.
  */
+.contain-arrow {
+  position: relative; }
+  .contain-arrow:before, .contain-arrow:after {
+    content: "";
+    position: absolute;
+    border-collapse: separate; }
+  .contain-arrow:before {
+    border: 12px solid transparent; }
+  .contain-arrow:after {
+    border: 11px solid transparent; }
+
 /**
  * Define individual edges so we can combine what we need, when we need.
  */
+.contain-arrow:before, .contain-arrow:after {
+  top: 50%;
+  margin-top: -12px; }
+.contain-arrow:after {
+  margin-top: -11px; }
+
+.contain-arrow:before, .contain-arrow:after {
+  left: 100%; }
+
 /*------------------------------------*\
     $BEAUTONS.CSS
 \*------------------------------------*/
@@ -3143,9 +3163,8 @@ label,
 .boxx-round {
   height: auto;
   padding: 1em;
-  border-style: none;
-  border-width: 8px;
-  border-#586780: #586780;
+  border-width: 1px;
+  border-color: #586780;
   border-radius: 8px;
   border-topleft: 8px;
   border--moz-border-radius-topleft: 8px;
@@ -3154,22 +3173,22 @@ label,
 .boxx-round-orange {
   height: auto;
   padding: 1em;
-  border-style: solid none none inset;
-  border-width: 8px;
+  border-width: 1px;
   border-color: #ff7400;
   border-radius: 8px;
   border-topleft: 8px;
-  -moz-border-radius-topleft: 8px;
-  -webkit-border-top-left-bottom-radius: 8px; }
+  border--moz-border-radius-topleft: 8px;
+  border--webkit-border-top-left-bottom-radius: 8px; }
 
 .code {
-  border-style: solid;
   border-width: 1px;
   border-color: #cc2d14;
   border-radius: 4px;
   border-bottomleft: 4px;
-  -moz-border-radius-bottomleft: 4px;
-  -webkit-border-bottom-left-bottom-radius: 4px; }
+  border--moz-border-radius-bottomleft: 4px;
+  border--webkit-border-bottom-left-bottom-radius: 4px;
+  border-style: solid;
+  border-width: 2px; }
 
 .contain, .contain-hide, .contain-menu, .contain-well, .contain-well-orange, .contain-well-quarter-orange {
   height: auto;
@@ -3179,8 +3198,27 @@ label,
   position: relative;
   list-style: none; }
 
+.contain-arrow {
+  border-width: 1px;
+  border-color: #00e5ff;
+  border-radius: 8px;
+  border-topleft: 8px;
+  border--moz-border-radius-topleft: 8px;
+  border--webkit-border-top-left-bottom-radius: 8px;
+  border-style: solid;
+  border-width: 2px;
+  background-color: #eeeeee; }
+  .contain-arrow:before {
+    border-left-color: #00e5ff !important; }
+  .contain-arrow:after {
+    border-left-color: #00e5ff !important; }
+
+.contain-dark {
+  width: auto;
+  background-color: rgba(0, 0, 0, 0.8); }
+
 .contain-hide {
-  display: hidden; }
+  display: none; }
 
 .contain-menu {
   width: 300px;
@@ -3190,9 +3228,8 @@ label,
 
 .contain-well {
   background-color: white;
-  border-style: none;
-  border-width: 8px;
-  border-#586780: #586780;
+  border-width: 1px;
+  border-color: #586780;
   border-radius: 8px;
   border-topleft: 8px;
   border--moz-border-radius-topleft: 8px;
@@ -3200,20 +3237,17 @@ label,
 
 .contain-well-orange, .contain-well-quarter-orange {
   background-color: white;
-  border-style: solid none none inset;
-  border-width: 8px;
+  border-width: 1px;
   border-color: #ff7400;
   border-radius: 8px;
   border-topleft: 8px;
-  -moz-border-radius-topleft: 8px;
-  -webkit-border-top-left-bottom-radius: 8px; }
+  border--moz-border-radius-topleft: 8px;
+  border--webkit-border-top-left-bottom-radius: 8px;
+  border-style: solid none none inset;
+  border-width: 8px; }
 
 .contain-well-quarter-orange {
   width: 25%; }
-
-.contain-dark {
-  width: auto;
-  background-color: rgba(0, 0, 0, 0.8); }
 
 .rounds {
   border-style: solid;
@@ -3364,7 +3398,6 @@ footer {
   footer h4, footer a {
     color: #999999; }
   footer a {
-    padding: 1.168em 2.0em;
     text-shadow: none;
     text-decoration: none; }
     footer a:hover {
@@ -3417,13 +3450,8 @@ a, div, li, p, ul {
 .center {
   text-align: center; }
 
-/* a:visited {
-	color: $grayblue;
-} */
 div a {
   word-wrap: break-word; }
-  div a:visited {
-    color: #586780; }
 
 .light {
   font-weight: 300; }

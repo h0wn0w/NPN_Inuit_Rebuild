@@ -6,9 +6,6 @@
 * This provides for m'typography
 */
 
-// @import "_main-colors";
-
-// $font-body: "proxima-nova",sans-serif;
 $font-body: $base-font-family;
 $font-heading: $base-font-family;
 $light: 300;
@@ -33,15 +30,11 @@ a, div, li, p, ul {
 	text-align: center;
 }
 
-/* a:visited {
-	color: $grayblue;
-} */
-
 div {
 	a {
 		word-wrap: break-word;
 		&:visited {
-			color: $grayblue;
+			// color: transparent;
 		}
 	}
 }

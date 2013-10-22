@@ -56,7 +56,7 @@ a.skip {
 
 /* drop down menu formatting when all menu items won't fit in a single line */
 .nav-menu .nav-primary {
-   margin: 0 0 1.5em;
+   margin: 0 0 1.0em;
    position: relative;
    overflow: hidden;
 }
@@ -70,7 +70,7 @@ a.skip {
    right: 0;
    display: block;
    width: 1.5em;
-   height: 2.5em; 
+   height: 2.0em; 
    background: #ccc url(/img/icons.png) no-repeat -205px 45%;
    text-indent: -999em;
    cursor: pointer;

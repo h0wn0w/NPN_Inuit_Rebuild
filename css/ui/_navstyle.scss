@@ -20,12 +20,6 @@ header {
   		shadow: none;
 	  	decoration: none;
 	}
-	// &:hover {
-	// 	-webkit-transform: translateZ( 0px ) rotateX(  -10deg );
-	// 	 -moz-transform: translateZ( 0px ) rotateX(  -10deg );
-	// 	   -o-transform: translateZ( 0px ) rotateX(  -10deg );
-	// 	      transform: translateZ( 0px ) rotateX(  -10deg );
-	// }
 }
 
 
@@ -44,8 +38,8 @@ header {
 	  color: #999999;
 	  padding: 0.5em;
 	  &:hover {
-	  color: $cream;
-	  background-color: transparent;
+	  	color: $cream;
+	  	background-color: transparent;
 	}
 		text: {
 	  		shadow: none;
@@ -61,7 +55,7 @@ footer {
 		color: $gray;
 	}
 	a {
-		padding: 1.168em 2.0em;
+		// padding: 1.168em 2.0em;
 		&:hover {
 			color: $cream;
 			background-color: transparent;
