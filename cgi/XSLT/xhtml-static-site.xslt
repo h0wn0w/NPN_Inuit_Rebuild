@@ -71,7 +71,7 @@
 		<xsl:copy>
 			<xsl:text disable-output-escaping="yes"><![CDATA[<!--#include virtual="${Base_URL}/templates/header.html" -->]]></xsl:text>
 			<xsl:if test="/html/head/title != ''">
-				<h1><xsl:value-of select="/html/head/title"/></h1>
+				<h1 class="page-title"><xsl:value-of select="/html/head/title"/></h1>
 			</xsl:if>
 			<xsl:if test="/html/head/meta[translate(@name,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz') = 'author']/@content != ''">
 				<div><span class="author">Written By: </span><xsl:value-of select="/html/head/meta[translate(@name,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz') = 'author']/@content"/>
