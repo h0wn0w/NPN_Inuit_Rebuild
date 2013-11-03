@@ -26,10 +26,6 @@ a, div, li, p, ul {
 	font-weight: $light;
 }
 
-.center {
-	text-align: center;
-}
-
 div {
 	a {
 		word-wrap: break-word;
@@ -37,6 +33,10 @@ div {
 			// color: transparent;
 		}
 	}
+}
+
+.center {
+	text-align: center;
 }
 
 .light {
@@ -49,6 +49,10 @@ div {
 
 .bold {
 	font-weight: $bold;
+}
+
+.page-title {
+	color: $red;
 }
 
 @media screen and (max-width: 480px) {
