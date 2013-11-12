@@ -25,14 +25,14 @@ a.skip {
 ------------------------------ */
 .nav-primary {
    clear: left;
-   margin: 0 0 2em;
+   /*margin: 0 0 2em;*/
 }
 .nav-primary h3 {
    position: absolute;
    left: -999em;
 }
 .nav-primary ul {
-   border: 1px solid #e6e6e6;
+   /*border: 1px solid #e6e6e6;*/
 }
 .nav-primary li {
    font-size: 1.8em;

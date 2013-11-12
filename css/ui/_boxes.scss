@@ -43,31 +43,6 @@ $width: 70em;
 	}
 }
 
-// @mixin rounded-orange($vert, $horz, $radius) {
-// 	border: {
-// 		style: $style none none inset;
-// 		width: $size *8;
-// 		// color: $grayblue;
-// 		color: $orange;
-// 		radius: $radius;
-// 		#{$vert}#{$horz}: $radius;
-// 	}
-//   -moz-border-radius-#{$vert}#{$horz}: $radius;
-//   -webkit-border-#{$vert}-#{$horz}-#{$bm}-radius: $radius;
-// }
-
-// @mixin rounded-red($vert, $horz, $radius, $color) {
-// 	border: {
-// 		style: $style;
-// 		width: $size;
-// 		color: $red;
-// 		radius: $radius;
-// 		#{$vert}#{$horz}: $radius;
-// 	}
-//   -moz-border-radius-#{$vert}#{$horz}: $radius;
-//   -webkit-border-#{$vert}-#{$horz}-#{$bm}-radius: $radius;
-// }
-
 .boxx {
 	@include boxx;
 }
@@ -78,7 +53,7 @@ $width: 70em;
 }
 
 .boxx-round-orange {
-	@include boxx;
+	@extend boxx;
 	@include rounded(top, left, $radius, $orange);
 	// @include rounded-orange(top, left, $radius);
 	// width: 25%;
@@ -131,6 +106,20 @@ $width: 70em;
 	@extend .contain;
 	background-color: $white-bright;
 	@include rounded(top, left, $radius, $grayblue);
+	a {
+		&:link {
+		  color: $grayblue;
+		  text-decoration: none;
+		}
+		&:visited {
+		  color: $orange;
+		  text-decoration: none;
+		}
+		&:hover {
+		  color: $cyan ;
+		  text-decoration: none;
+		}
+	}
 }
 
 .contain-well-orange {
