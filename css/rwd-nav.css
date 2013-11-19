@@ -64,7 +64,8 @@ a.skip {
    padding-right: 3em;
 }
 .nav-menu .nav-primary h3 {
-   position: absolute;
+   /*position: absolute;*/
+   position: relative;
    top: 0;
    left: auto;
    right: 0;
@@ -122,6 +123,12 @@ a.skip {
 /*added for NPN
 * adapts the menu a LOT better for a mobile phone-sized screen
 */
+@media screen and (max-width: 26.667em) {
+   .nav-primary li {
+      font-size: 1.2em;
+      line-height: 0.4em;
+   }
+}
 
 @media screen and (min-width: 26.667em) and (max-width: 35.500em) {
    .nav-primary li {

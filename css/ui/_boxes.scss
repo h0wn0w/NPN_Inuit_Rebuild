@@ -37,10 +37,10 @@ $width: 70em;
 		width: $size;
 		color: $color;
 		radius: $radius;
-		#{$vert}#{$horz}: $radius;
-	-moz-border-radius-#{$vert}#{$horz}: $radius;
-	-webkit-border-#{$vert}-#{$horz}-#{$bm}-radius: $radius;
+		#{$vert}#{$horz}-radius: $radius;
 	}
+	-moz-border-radius-#{$vert}#{$horz}: $radius;
+	-webkit-border-#{$vert}-#{$horz}-radius: $radius;
 }
 
 .boxx {
@@ -53,7 +53,7 @@ $width: 70em;
 }
 
 .boxx-round-orange {
-	@extend boxx;
+	@extend .boxx;
 	@include rounded(top, left, $radius, $orange);
 	// @include rounded-orange(top, left, $radius);
 	// width: 25%;
@@ -97,10 +97,10 @@ $width: 70em;
 	@extend .contain;
 	width: 300px;
 	background-color: $white;
-		li {
-			list-style: none;
-		}
+	li {
+		list-style: none;
 	}
+}
 
 .contain-well {
 	@extend .contain;
@@ -124,7 +124,7 @@ $width: 70em;
 
 .contain-well-orange {
 	@extend .contain;
-	background-color: $white-bright;	
+	background-color: $white;	
 	@include rounded(top, left, $radius, $orange);
 	border: {
 		style: $style none none inset;
@@ -151,7 +151,7 @@ $width: 70em;
 		style: $style none none none;
 		width: $size * 5;
 		color: $orange;
-		#{$tp}-radius: $radius;
+		#{$tp}-right-radius: $radius;
 	}
 }
 
@@ -160,8 +160,20 @@ $width: 70em;
 		style: none none $style;
 		width: $size *5;
 		color: $grayblue;
-		#{$bm}-radius: $radius;
+		#{$bm}-left-radius: $radius;
 	}
+
+.rounds-both {
+	border: {
+		style: $style none $style none;
+		width: $size *5;
+		top-color: $orange;
+		#{$tp}-right-radius: $radius;
+		#{$bm}-left-radius: $radius;
+	}
+}
+
+
 	/* attach this to any class */
 
 // @include arrow(bottom, center, $orange, $bluegray)
