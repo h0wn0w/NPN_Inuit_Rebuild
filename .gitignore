@@ -20,3 +20,4 @@ sphider/admin/*
 sphider/settings/database.php
 .DS_Store
 sitemap.xml
+dploy.yaml
