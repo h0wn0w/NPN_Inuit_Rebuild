@@ -45,7 +45,8 @@ do
 	# Determine stylesheet to use
 	mode="xhtml-static-site.xslt"
 	
-	multimarkdown "$1" | xsltproc -nonet -novalid $xslt_path/XSLT/$mode - > "$file_name.html"
+	# The --process-html option allows for use of raw html in .txt files
+	multimarkdown --process-html "$1" | xsltproc -nonet -novalid $xslt_path/XSLT/$mode - > "$file_name.html"
 	shift
 done
 fi
