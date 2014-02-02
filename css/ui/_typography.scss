@@ -35,6 +35,10 @@ div {
 	}
 }
 
+.bold {
+	font-weight: $bold;
+}
+
 .center {
 	text-align: center;
 }
@@ -47,9 +51,6 @@ div {
 	font-weight: $regular;
 }
 
-.bold {
-	font-weight: $bold;
-}
 
 .page-title {
 	color: $red;

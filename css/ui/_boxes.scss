@@ -162,6 +162,7 @@ $width: 70em;
 		color: $grayblue;
 		#{$bm}-left-radius: $radius;
 	}
+}
 
 .rounds-both {
 	border: {
@@ -177,7 +178,6 @@ $width: 70em;
 	/* attach this to any class */
 
 // @include arrow(bottom, center, $orange, $bluegray)
-}
 
 .sidebar {
 	max-width: 20em;
