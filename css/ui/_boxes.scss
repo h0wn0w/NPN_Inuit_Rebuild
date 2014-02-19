@@ -12,17 +12,19 @@ $style: solid;
 $size: 1px;
 $tp: top;
 $bm: bottom;
+$lt: left;
+$rt: right;
 $radius: 8px;
 $width: 70em;
 // $color: #000;
 
-@mixin boxx {
+%boxx {
 	height: auto;
 	// width: 25%;
 	padding: 1em;
 }
 
-@mixin contain {
+%contain {
 	height: auto;
 	width: auto;
 	margin: 1em;
@@ -43,17 +45,17 @@ $width: 70em;
 	-webkit-border-#{$vert}-#{$horz}-radius: $radius;
 }
 
-.boxx {
-	@include boxx;
+%boxx {
+	@extend %boxx;
 }
 
-.boxx-round {
-	@include boxx;
+%boxx-round {
+	@extend %boxx;
 	@include rounded(top, left, $radius, $grayblue);
 }
 
-.boxx-round-orange {
-	@extend .boxx;
+%boxx-round-orange {
+	@extend %boxx;
 	@include rounded(top, left, $radius, $orange);
 	// @include rounded-orange(top, left, $radius);
 	// width: 25%;
@@ -68,7 +70,7 @@ $width: 70em;
 }
 
 .contain {
-	@include contain;
+	@extend %contain;
 }
 
 .contain-arrow {
@@ -83,7 +85,7 @@ $width: 70em;
 }
 
 .contain-dark {
-	@extend .boxx;
+	@extend %boxx;
 	width: auto;
 	background-color: $black-translucent;
 }
@@ -125,7 +127,7 @@ $width: 70em;
 .contain-well-orange {
 	@extend .contain;
 	background-color: $white;	
-	@include rounded(top, left, $radius, $orange);
+	@include rounded($tp, $lt, $radius, $orange);
 	border: {
 		style: $style none none inset;
 		width: 8px;
@@ -137,28 +139,34 @@ $width: 70em;
 	width: 25%;
 }
 
+.containWhite {
+	@extend %contain;
+	margin-bottom: 1em;
+	background-color:rgba(192,192,192,0.3);
+}
+
 .rounds {
 	border: {
-		style: $style;
 		width: $size * 3;
+		style: $style;
 		color: $green-bright;
 		radius: $radius;
 	}
 }
 
 .rounds-#{$tp} {
-	border: {
-		style: $style none none none;
+	border-#{$tp}: {
 		width: $size * 5;
+		style: $style none none none;
 		color: $orange;
 		#{$tp}-right-radius: $radius;
 	}
 }
 
 .rounds-#{$bm} {
-	border: {
-		style: none none $style;
+	border-#{$bm}: {
 		width: $size *5;
+		style: none none $style;
 		color: $grayblue;
 		#{$bm}-left-radius: $radius;
 	}
@@ -166,18 +174,13 @@ $width: 70em;
 
 .rounds-both {
 	border: {
-		style: $style none $style none;
 		width: $size *5;
+		style: $style none $style none;
 		top-color: $orange;
 		#{$tp}-right-radius: $radius;
 		#{$bm}-left-radius: $radius;
 	}
 }
-
-
-	/* attach this to any class */
-
-// @include arrow(bottom, center, $orange, $bluegray)
 
 .sidebar {
 	max-width: 20em;
