@@ -6,12 +6,6 @@
 * This provides for tweaking aspects of .nav <header> and <footer>
 */
 
-@mixin rounded($vert, $horz, $radius) {
-  border-#{$vert}-#{$horz}-radius: $radius;
-  -moz-border-radius-#{$vert}#{$horz}: $radius;
-  -webkit-border-#{$vert}-#{$horz}-radius: $radius;
-}
-
 header {
 	// height: 60px;
 	margin: 0 auto;
@@ -29,10 +23,10 @@ header {
 	li {
 		list-style: none;
 		&:first-child {
-			@include rounded(top, left, 8px);
+			@include rounded(top, left, 8px, transparent);
 		}
 		&:last-child {
-			@include rounded(top, left, 5px);
+			@include rounded(top, left, 5px, transparent);
 		}
 	a {
 	  color: #999999;

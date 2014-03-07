@@ -8,42 +8,17 @@
 
 // @import "_main-colors";
 
-$style: solid;
-$size: 1px;
-$tp: top;
-$bm: bottom;
-$lt: left;
-$rt: right;
-$radius: 8px;
-$width: 70em;
+// $style: solid;
+// $size: 1px;
+// $tp: top;
+// $bm: bottom;
+// $lt: left;
+// $rt: right;
+// $radius: 8px;
+// $width: 70em;
 // $color: #000;
 
-%boxx {
-	height: auto;
-	// width: 25%;
-	padding: 1em;
-}
 
-%contain {
-	height: auto;
-	width: auto;
-	margin: 1em;
-	padding: 2em;
-	position: relative; 
-	list-style: none;
-}
-
-@mixin rounded($vert, $horz, $radius, $color) {
-	border: {
-		// style: solid;
-		width: $size;
-		color: $color;
-		radius: $radius;
-		#{$vert}#{$horz}-radius: $radius;
-	}
-	-moz-border-radius-#{$vert}#{$horz}: $radius;
-	-webkit-border-#{$vert}-#{$horz}-radius: $radius;
-}
 
 %boxx {
 	@extend %boxx;
@@ -106,7 +81,12 @@ $width: 70em;
 
 .contain-well {
 	@extend .contain;
-	background-color: $white-bright;
+	background {
+		color: $white-bright;
+		// &:hover {
+		// 	color: $white-bright;
+		// }
+	}
 	@include rounded(top, left, $radius, $grayblue);
 	a {
 		&:link {

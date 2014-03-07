@@ -67,7 +67,7 @@ $base-font-size: 18px;
 
 
 /*------------------------------------*\
-    $CUSTOM
+    $COLORS
 \*------------------------------------*/
 /**
  * Place any of your own variables that sit on top of inuit.css here.
@@ -91,3 +91,24 @@ $orange: #FF7400;
 $red: #CC2D14;
 $white: #eee;
 $white-bright: #fff;
+
+/*------------------------------------*\
+    $SIZING
+\*------------------------------------*/
+
+$tall-regular: 1.618em;
+$tall: 2em;
+$taller: $tall*1.5;
+$tallest: $tall*2; 
+
+/*------------------------------------*\
+    $BORDERS
+\*------------------------------------*/
+$style: solid;
+$size: 1px;
+$tp: top;
+$bm: bottom;
+$lt: left;
+$rt: right;
+$radius: 8px;
+$width: 70em;

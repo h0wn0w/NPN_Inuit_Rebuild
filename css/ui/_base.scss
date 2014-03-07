@@ -1,0 +1,39 @@
+/*------------------------------------*\
+    $BASE
+\*------------------------------------*/
+/**
+* mixins and placeholders
+*/
+
+// @mixin rounded($vert, $horz, $radius) {
+// 	-webkit-border-#{$vert}-#{$horz}-radius: $radius;
+//        -moz-border-radius-#{$vert}#{$horz}: $radius;
+// 			border-#{$vert}-#{$horz}-radius: $radius;
+// }
+
+%boxx {
+	height: auto;
+	// width: 25%;
+	padding: 1em;
+}
+
+%contain {
+	height: auto;
+	width: auto;
+	margin: 1em;
+	padding: 2em;
+	position: relative; 
+	list-style: none;
+}
+
+@mixin rounded($vert, $horz, $radius, $color) {
+	-webkit-border-#{$vert}-#{$horz}-radius: $radius;
+	   -moz-border-radius-#{$vert}#{$horz}: $radius;
+			border: {
+				// style: solid;
+				width: $size;
+				color: $color;
+				radius: $radius;
+				#{$vert}#{$horz}-radius: $radius;
+			}
+}
