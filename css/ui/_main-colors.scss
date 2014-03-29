@@ -38,11 +38,23 @@ body {
 	background-color: $black-translucent;
 }
 
+.blue-f {
+	color: $blue;
+}
+
 .blue {
 	background-color: $blue;
 }
 
+.blue-bright {
+	color: $blue-bright;
+}
+
 .blue-dark {
+	color: darken($blue, 10%);
+}
+
+.blue-dark-bg {
 	background-color: darken($blue, 10%);
 }
 

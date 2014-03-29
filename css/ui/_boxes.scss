@@ -18,18 +18,16 @@
 // $width: 70em;
 // $color: #000;
 
-
-
-%boxx {
+.boxx {
 	@extend %boxx;
 }
 
-%boxx-round {
+.boxx-round {
 	@extend %boxx;
 	@include rounded(top, left, $radius, $grayblue);
 }
 
-%boxx-round-orange {
+.boxx-round-orange {
 	@extend %boxx;
 	@include rounded(top, left, $radius, $orange);
 	// @include rounded-orange(top, left, $radius);
@@ -81,12 +79,7 @@
 
 .contain-well {
 	@extend .contain;
-	background {
-		color: $white-bright;
-		// &:hover {
-		// 	color: $white-bright;
-		// }
-	}
+	background-color: $white-bright;
 	@include rounded(top, left, $radius, $grayblue);
 	a {
 		&:link {
@@ -102,6 +95,16 @@
 		  text-decoration: none;
 		}
 	}
+}
+
+.contain-well-t {
+	@extend .contain;
+	@include rounded($tp, $lt, $radius, $black-translucent);
+	border: {
+		style: $style none none inset;
+		width: 8px;
+	}
+	background-color: $white;
 }
 
 .contain-well-orange {

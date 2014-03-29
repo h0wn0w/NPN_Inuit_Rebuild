@@ -10,12 +10,18 @@
 
 .article {
 	font-size: $base-font-size +2;
+	text-align: left;
+	line-height: 1.7em;
 	max-width: $width - 40em;
 	margin: 0 auto;
 }
 
 .author, .date {
 	font-weight: bold;
+}
+
+.main {
+	padding: 0 1.2 em 0 1.2em;
 }
 
 .tags {

@@ -1,13 +1,17 @@
 Title:				Tools & Resources
 Author:
-Tags:				Assessment, Downloads, Evaluation, Resources, Testing
+Category:			Main
+Tags:				Assessment, Downloads, Resources
+
 
 Simple access to helpful tools: it's what you want, and it's what we have. So, we've curated a page of links to tools & resources. Just for you.
 
-Found what you want? Great! Looking for more? No problem. Simply use the navigation dropdown menu at the top of any screen to explore other site content.
+Found what you want? Great! Looking for more? No problem. Simply use the navigation dropdown menu at the top of any screen to explore other site content. Do it. Now. 
 
+<div class="contain-well-t">
 [iOS Apps](/neuroapps.html) for neuropsychologists
 
 [Assessment Resources](/downloads.html) including copyright-free protocols, score converters, and calculators
 
 [External Links](/extlinks.html) to organizations, journals, and more
+</div>

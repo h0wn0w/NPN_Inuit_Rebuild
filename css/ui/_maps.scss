@@ -1,0 +1,24 @@
+/*------------------------------------*\
+    $MAPS
+\*------------------------------------*/
+
+/**
+* like mixins, but maps
+*/
+
+$weight-map: (light, 300), (regular, 400), (bold, 600);
+$align-list: center, left, right;
+
+@each $weight, $weight-num in $weight-map {
+	.#{$weight}, {
+		font-weight: $weight-num;
+	}
+}
+
+.txt- {
+  @each $align in $align-list {
+    &#{$align} {
+      text-align: $align;
+    }
+  }
+}

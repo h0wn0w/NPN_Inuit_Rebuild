@@ -77,8 +77,9 @@ $base-font-size: 18px;
 * The variables below are global. Global. Global. Global.
 */
 $black: #000000;
-$black-translucent: rgba(0,0,0,0.8);
+$black-translucent: rgba(0,0,0,0.5);
 $blue: #3c4657;
+$blue-bright: rgba(32,88,237,1);
 $bluegray: #3D5F99;
 $bluelight: #B0CDFF;
 $cream: rgb(238,232,213);
@@ -90,7 +91,7 @@ $green-bright: #76FF72;
 $orange: #FF7400;
 $red: #CC2D14;
 $white: #eee;
-$white-bright: #fff;
+$white-bright: #ffffff;
 
 /*------------------------------------*\
     $SIZING

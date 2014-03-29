@@ -8,9 +8,10 @@
 
 $font-body: $base-font-family;
 $font-heading: $base-font-family;
-$light: 300;
-$regular: 400;
+// $weight-map: (light, 300), (regular, 400), (bold, 600);
+// $align-list: center, left, right;
 $bold: 600;
+$light: 300;
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: $font-heading;
@@ -26,7 +27,7 @@ a, div, li, p, ul {
 	font-weight: $light;
 }
 
-div {
+div {	
 	a {
 		word-wrap: break-word;
 		&:visited {
@@ -35,23 +36,23 @@ div {
 	}
 }
 
-.bold {
-	font-weight: $bold;
-}
+// @each $weight, $weight-num in $weight-map {
+//   #{$weight}, {
+//     font-weight: $weight-num;
+//   }
+// }
 
-.center {
-	text-align: center;
-}
+// .txt- {
+//   @each $align in $align-list {
+//     &#{$align} {
+//       text-align: $align;
+//     }
+//   }
+// }
 
-.light {
-	font-weight: $light;
-}
-
-.regular {
-	font-weight: $regular;
-}
-
-
+// .center {
+// 	text-align: center;
+// }
 .page-title {
 	color: $red;
 }

@@ -91,6 +91,12 @@
 					<xsl:apply-templates select="@*|node()"/>
 				</div>
 			</xsl:when>
+			<xsl:when test="/html/head/meta[translate(@name,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz') = 'category']/@content != ''">
+				<xsl:value-of select="/html/head/meta[translate(@name,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz') = 'category']"/>
+				<div class="main">
+					<xsl:apply-templates select="@*|node()"/>
+				</div>
+			</xsl:when>
 			<xsl:otherwise>
 				<xsl:apply-templates select="@*|node()"/>
 			</xsl:otherwise>
